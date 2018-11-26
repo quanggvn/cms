@@ -24,7 +24,8 @@ Route::group(['namespace'=>'Admin'], function (){
         Route::get('home', 'HomeController@getHome');
         Route::group(['prefix' => 'category'], function (){
             Route::get('/', 'CategoryController@getCate');
-            Route::get('edit', 'CategoryController@getEditCate');
+            Route::get('edit/{id}', 'CategoryController@getEditCate');
+            Route::get('delete/{id}', 'CategoryController@getDeleteCate');
         });
     });
 }
