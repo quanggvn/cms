@@ -19,9 +19,9 @@ class LoginController extends Controller
             $remember = 'false';
         }
         if (Auth::attempt($arr, $remember)){
-            dd('thanh cong');
+           return redirect()->intended('admin/home');
         }else{
-            dd('that bai');
+           return back()->withInput()->with('error', 'Tài khoản hoặc mật khẩu chưa đúng!');
         }
     }
 
