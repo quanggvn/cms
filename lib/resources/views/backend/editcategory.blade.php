@@ -19,6 +19,9 @@
 								<label>Tên danh mục:</label>
     							<input type="text" name="name" class="form-control" placeholder="Tên danh mục...">
 							</div>
+							<div class="form-group">
+								<input type="submit" name="submit" class="btn-primary btn form-control" value="Thêm mới">
+							</div>
 						</div>
 					</div>
 			</div>
