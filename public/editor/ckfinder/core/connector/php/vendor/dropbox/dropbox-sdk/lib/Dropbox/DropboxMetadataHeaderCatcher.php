@@ -43,7 +43,7 @@ final class DropboxMetadataHeaderCatcher
             return strlen($header);
         }
 
-        // If we've encountered an error on a previous callback, then there's nothing left to do.
+        // If we've encountered an errors on a previous callback, then there's nothing left to do.
         if ($this->error !== null) {
             return strlen($header);
         }

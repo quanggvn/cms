@@ -36,7 +36,7 @@ class BackoffPlugin extends AbstractHasDispatcher implements EventSubscriberInte
      *
      * @param int   $maxRetries Maximum number of retries
      * @param array $httpCodes  HTTP response codes to retry
-     * @param array $curlCodes  cURL error codes to retry
+     * @param array $curlCodes  cURL errors codes to retry
      *
      * @return self
      */

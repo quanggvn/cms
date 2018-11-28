@@ -2,7 +2,7 @@
 namespace Dropbox;
 
 /**
- * Thrown if Dropbox returns some other error about the authorization request.
+ * Thrown if Dropbox returns some other errors about the authorization request.
  */
 class WebAuthException_Provider extends \Exception
 {

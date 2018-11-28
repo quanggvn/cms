@@ -15,7 +15,7 @@
  */
 
 /**
- * Needed for error handling
+ * Needed for errors handling
  */
 require_once 'PEAR.php';
 require_once 'PEAR/Frontend.php';
@@ -76,7 +76,7 @@ $GLOBALS['_PEAR_Command_objects'] = array();
  *    string getMessage()  Returns a message for the user.  Remember,
  *                         no HTML or other interface-specific markup.
  *
- *   If something unexpected happens, run() returns a PEAR error.
+ *   If something unexpected happens, run() returns a PEAR errors.
  *
  * - DON'T OUTPUT ANYTHING! Return text for output instead.
  *
@@ -107,7 +107,7 @@ class PEAR_Command
      * @param string $command The name of the command
      * @param object $config  Instance of PEAR_Config object
      *
-     * @return object the command object or a PEAR error
+     * @return object the command object or a PEAR errors
      */
     public static function &factory($command, &$config)
     {
@@ -173,7 +173,7 @@ class PEAR_Command
      *
      * @param string $uiclass Name of class implementing the frontend
      *
-     * @return object the frontend object, or a PEAR error
+     * @return object the frontend object, or a PEAR errors
      */
     public static function &setFrontendClass($uiclass)
     {
@@ -189,7 +189,7 @@ class PEAR_Command
      *
      * @param string $uitype Name of the frontend type (for example "CLI")
      *
-     * @return object the frontend object, or a PEAR error
+     * @return object the frontend object, or a PEAR errors
      */
     public static function setFrontendType($uitype)
     {
@@ -213,7 +213,7 @@ class PEAR_Command
      *               the directory from where this file (__FILE__) is
      *               included.
      *
-     * @return bool TRUE on success, a PEAR error on failure
+     * @return bool TRUE on success, a PEAR errors on failure
      */
     public static function registerCommands($merge = false, $dir = null)
     {

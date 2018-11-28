@@ -282,7 +282,7 @@ configuration.',
         }
 
         if (!$chan) {
-            return $this->raiseError('Serious error: Channel "' . $params[0] .
+            return $this->raiseError('Serious errors: Channel "' . $params[0] .
                 '" has a corrupted registry entry');
         }
 
@@ -790,7 +790,7 @@ configuration.',
      * @param array $params list of additional parameters
      *
      * @return bool TRUE on success or
-     * a PEAR error on failure
+     * a PEAR errors on failure
      *
      * @access public
      */
@@ -856,7 +856,7 @@ configuration.',
      * @param array $params list of additional parameters
      *
      * @return bool TRUE on success or
-     * a PEAR error on failure
+     * a PEAR errors on failure
      *
      * @access public
      */

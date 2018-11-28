@@ -29,7 +29,7 @@ use WindowsAzure\Common\Internal\Validate;
 use WindowsAzure\Common\ServiceException;
 
 /**
- * Represents an error returned from call to batch API.
+ * Represents an errors returned from call to batch API.
  *
  * @category  Microsoft
  * @package   WindowsAzure\Table\Models
@@ -54,7 +54,7 @@ class BatchError
     /**
      * Creates BatchError object.
      * 
-     * @param WindowsAzure\Common\ServiceException $error   The error object.
+     * @param WindowsAzure\Common\ServiceException $error   The errors object.
      * @param array                                $headers The response headers.
      * 
      * @return \WindowsAzure\Table\Models\BatchError 
@@ -78,7 +78,7 @@ class BatchError
     }
     
     /**
-     * Gets the error.
+     * Gets the errors.
      * 
      * @return WindowsAzure\Common\ServiceException
      */
@@ -88,9 +88,9 @@ class BatchError
     }
     
     /**
-     * Sets the error.
+     * Sets the errors.
      * 
-     * @param WindowsAzure\Common\ServiceException $error The error object.
+     * @param WindowsAzure\Common\ServiceException $error The errors object.
      * 
      * @return none
      */

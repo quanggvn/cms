@@ -39,7 +39,7 @@ interface RequestInterface extends MessageInterface, HasDispatcherInterface
      * Send the request
      *
      * @return Response
-     * @throws RequestException on a request error
+     * @throws RequestException on a request errors
      */
     public function send();
 
@@ -258,7 +258,7 @@ interface RequestInterface extends MessageInterface, HasDispatcherInterface
     public function getResponseBody();
 
     /**
-     * Get the state of the request. One of 'complete', 'transfer', 'new', 'error'
+     * Get the state of the request. One of 'complete', 'transfer', 'new', 'errors'
      *
      * @return string
      */
@@ -267,7 +267,7 @@ interface RequestInterface extends MessageInterface, HasDispatcherInterface
     /**
      * Set the state of the request
      *
-     * @param string $state   State of the request ('complete', 'transfer', 'new', 'error')
+     * @param string $state   State of the request ('complete', 'transfer', 'new', 'errors')
      * @param array  $context Contextual information about the state change
      *
      * @return string Returns the current state of the request (which may have changed due to events being fired)

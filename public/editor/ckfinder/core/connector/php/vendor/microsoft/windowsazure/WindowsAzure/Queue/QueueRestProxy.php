@@ -115,7 +115,7 @@ class QueueRestProxy extends ServiceRestProxy implements IQueue
      * 
      * If a queue contains a large number of messages, Clear Messages may time out 
      * before all messages have been deleted. In this case the Queue service will 
-     * return status code 500 (Internal Server Error), with the additional error 
+     * return status code 500 (Internal Server Error), with the additional errors
      * code OperationTimedOut. If the operation times out, the client should 
      * continue to retry Clear Messages until it succeeds, to ensure that all 
      * messages have been deleted.

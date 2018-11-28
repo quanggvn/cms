@@ -68,7 +68,7 @@ interface SessionInterface
      *                      to expire with browser session. Time is in seconds, and is
      *                      not a Unix timestamp.
      *
-     * @return bool True if session invalidated, false if error
+     * @return bool True if session invalidated, false if errors
      */
     public function invalidate($lifetime = null);
 
@@ -82,7 +82,7 @@ interface SessionInterface
      *                       to expire with browser session. Time is in seconds, and is
      *                       not a Unix timestamp.
      *
-     * @return bool True if session migrated, false if error
+     * @return bool True if session migrated, false if errors
      */
     public function migrate($destroy = false, $lifetime = null);
 

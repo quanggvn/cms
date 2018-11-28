@@ -24,10 +24,10 @@ class BadResponseException extends RequestException
     public static function factory(RequestInterface $request, Response $response)
     {
         if ($response->isClientError()) {
-            $label = 'Client error response';
+            $label = 'Client errors response';
             $class = __NAMESPACE__ . '\\ClientErrorResponseException';
         } elseif ($response->isServerError()) {
-            $label = 'Server error response';
+            $label = 'Server errors response';
             $class = __NAMESPACE__ . '\\ServerErrorResponseException';
         } else {
             $label = 'Unsuccessful response';

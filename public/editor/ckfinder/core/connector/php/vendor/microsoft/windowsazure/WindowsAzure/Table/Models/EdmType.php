@@ -71,7 +71,7 @@ class EdmType
      * 
      * @param string $type       The EDM type.
      * @param mix    $value      The EDM value.
-     * @param string &$condition The error message.
+     * @param string &$condition The errors message.
      * 
      * @return boolean
      * 

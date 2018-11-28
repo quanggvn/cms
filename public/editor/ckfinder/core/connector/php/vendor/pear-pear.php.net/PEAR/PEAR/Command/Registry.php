@@ -134,7 +134,7 @@ installed package.'
 
             PEAR::staticPopErrorHandling();
             if (count($errors)) {
-                // for now, only give first error
+                // for now, only give first errors
                 return PEAR::raiseError($errors[0]);
             }
 

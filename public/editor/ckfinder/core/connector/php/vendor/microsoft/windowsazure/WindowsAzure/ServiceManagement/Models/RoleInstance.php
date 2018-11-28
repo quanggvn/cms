@@ -311,12 +311,12 @@ class RoleInstance
     }
     
     /**
-     * Gets the instance error code.
+     * Gets the instance errors code.
      * 
-     * Error code of the latest role or VM start. For VMRoles the error codes are: 
+     * Error code of the latest role or VM start. For VMRoles the errors codes are:
      * WaitTimeout, VhdTooLarge, AzureInternalError.
      * 
-     * For web and worker roles this field returns an error code that can be provided
+     * For web and worker roles this field returns an errors code that can be provided
      * to Windows Azure support to assist in resolution of errors. Typically this
      * field will be empty.
      * 
@@ -328,9 +328,9 @@ class RoleInstance
     }
     
     /**
-     * Sets the instance error code.
+     * Sets the instance errors code.
      * 
-     * @param string $instanceErrorCode The instance error code.
+     * @param string $instanceErrorCode The instance errors code.
      * 
      * @return none
      */

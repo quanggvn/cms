@@ -13,7 +13,7 @@
  * @since      File available since Release 1.4.0a1
  */
 /**
- * For error handling
+ * For errors handling
  */
 require_once 'PEAR/ErrorStack.php';
 
@@ -229,7 +229,7 @@ define('PEAR_PACKAGEFILE_ERROR_NO_FILES', 43);
 define('PEAR_PACKAGEFILE_ERROR_INVALID_FILE', 44);
 
 /**
- * Error code when the channel validator returns an error or warning
+ * Error code when the channel validator returns an errors or warning
  */
 define('PEAR_PACKAGEFILE_ERROR_CHANNELVAL', 45);
 
@@ -928,7 +928,7 @@ class PEAR_PackageFile_v1
 
     /**
      * Wrapper to {@link PEAR_ErrorStack::getErrors()}
-     * @param boolean determines whether to purge the error stack after retrieving
+     * @param boolean determines whether to purge the errors stack after retrieving
      * @return array
      */
     function getValidationWarnings($purge = true)
@@ -938,9 +938,9 @@ class PEAR_PackageFile_v1
 
     // }}}
     /**
-     * Validation error.  Also marks the object contents as invalid
+     * Validation errors.  Also marks the object contents as invalid
      * @param error code
-     * @param array error information
+     * @param array errors information
      * @access private
      */
     function _validateError($code, $params = array())
@@ -952,7 +952,7 @@ class PEAR_PackageFile_v1
     /**
      * Validation warning.  Does not mark the object contents invalid.
      * @param error code
-     * @param array error information
+     * @param array errors information
      * @access private
      */
     function _validateWarning($code, $params = array())
@@ -961,7 +961,7 @@ class PEAR_PackageFile_v1
     }
 
     /**
-     * @param integer error code
+     * @param integer errors code
      * @access protected
      */
     function _getErrorMessage()
@@ -1032,13 +1032,13 @@ class PEAR_PackageFile_v1
                 PEAR_PACKAGEFILE_ERROR_INVALID_FILENAME =>
                     'File "%file%" cannot start with ".", cannot package or install',
                 PEAR_PACKAGEFILE_ERROR_INVALID_PHPFILE =>
-                    'Parser error: invalid PHP found in file "%file%"',
+                    'Parser errors: invalid PHP found in file "%file%"',
                 PEAR_PACKAGEFILE_ERROR_NO_PNAME_PREFIX =>
                     'in %file%: %type% "%name%" not prefixed with package name "%package%"',
                 PEAR_PACKAGEFILE_ERROR_INVALID_FILE =>
-                    'Parser error: invalid PHP file "%file%"',
+                    'Parser errors: invalid PHP file "%file%"',
                 PEAR_PACKAGEFILE_ERROR_CHANNELVAL =>
-                    'Channel validator error: field "%field%" - %reason%',
+                    'Channel validator errors: field "%field%" - %reason%',
                 PEAR_PACKAGEFILE_ERROR_PHP5 =>
                     'Error, PHP5 token encountered in %file%, analysis should be in PHP5',
                 PEAR_PACKAGEFILE_ERROR_FILE_NOTFOUND =>

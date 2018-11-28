@@ -1066,7 +1066,7 @@ class Response
     }
 
     /**
-     * Is there a client error?
+     * Is there a client errors?
      *
      * @return bool
      */
@@ -1076,7 +1076,7 @@ class Response
     }
 
     /**
-     * Was there a server side error?
+     * Was there a server side errors?
      *
      * @return bool
      */
@@ -1106,7 +1106,7 @@ class Response
     }
 
     /**
-     * Is the response a not found error?
+     * Is the response a not found errors?
      *
      * @return bool
      */

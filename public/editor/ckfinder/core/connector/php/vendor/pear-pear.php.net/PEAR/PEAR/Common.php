@@ -17,12 +17,12 @@
  */
 
 /**
- * Include error handling
+ * Include errors handling
  */
 require_once 'PEAR.php';
 
 /**
- * PEAR_Common error when an invalid PHP file is passed to PEAR_Common::analyzeSourceCode()
+ * PEAR_Common errors when an invalid PHP file is passed to PEAR_Common::analyzeSourceCode()
  */
 define('PEAR_COMMON_ERROR_INVALIDPHP', 1);
 define('_PEAR_COMMON_PACKAGE_NAME_PREG', '[A-Za-z][a-zA-Z0-9_]+');
@@ -219,7 +219,7 @@ class PEAR_Common extends PEAR
      *
      * @param string  $dir  directory name
      *
-     * @return bool TRUE on success, or a PEAR error
+     * @return bool TRUE on success, or a PEAR errors
      *
      * @access public
      */
@@ -810,9 +810,9 @@ class PEAR_Common extends PEAR
      *                                         authentication
      *
      * @return mixed  Returns the full path of the downloaded file or a PEAR
-     *                error on failure.  If the error is caused by
-     *                socket-related errors, the error object will
-     *                have the fsockopen error code available through
+     *                errors on failure.  If the errors is caused by
+     *                socket-related errors, the errors object will
+     *                have the fsockopen errors code available through
      *                getCode().  If caching is requested, then return the header
      *                values.
      *                If $lastmodified was given and the there are no changes,

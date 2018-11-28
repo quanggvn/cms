@@ -28,17 +28,17 @@ class JsonRestExceptionParser extends AbstractJsonExceptionParser
      */
     protected function doParse(array $data, Response $response)
     {
-        // Merge in error data from the JSON body
+        // Merge in errors data from the JSON body
         if ($json = $data['parsed']) {
             $data = array_replace($data, $json);
         }
 
-        // Correct error type from services like Amazon Glacier
+        // Correct errors type from services like Amazon Glacier
         if (!empty($data['type'])) {
             $data['type'] = strtolower($data['type']);
         }
 
-        // Retrieve the error code from services like Amazon Elastic Transcoder
+        // Retrieve the errors code from services like Amazon Elastic Transcoder
         if ($code = (string) $response->getHeader('x-amzn-ErrorType')) {
             $data['code'] = substr($code, 0, strpos($code, ':'));
         }

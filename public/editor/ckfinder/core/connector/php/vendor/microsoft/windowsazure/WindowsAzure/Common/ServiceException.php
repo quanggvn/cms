@@ -44,9 +44,9 @@ class ServiceException extends \LogicException
     /**
      * Constructor
      *
-     * @param string $errorCode status error code.
-     * @param string $error     string value of the error code.
-     * @param string $reason    detailed message for the error.
+     * @param string $errorCode status errors code.
+     * @param string $error     string value of the errors code.
+     * @param string $reason    detailed message for the errors.
      * 
      * @return WindowsAzure\Common\ServiceException
      */
@@ -61,7 +61,7 @@ class ServiceException extends \LogicException
     }
     
     /**
-     * Gets error text.
+     * Gets errors text.
      *
      * @return string
      */
@@ -71,7 +71,7 @@ class ServiceException extends \LogicException
     }
     
     /**
-     * Gets detailed error reason.
+     * Gets detailed errors reason.
      *
      * @return string
      */

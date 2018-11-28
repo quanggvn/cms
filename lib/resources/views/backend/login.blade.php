@@ -27,7 +27,7 @@
 				<div class="panel-body">
 					<form role="form" method="POST" action="">
 						<fieldset>
-							@include('error.note')
+							@include('errors.note')
 							<div class="form-group">
 								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" value="{{old('email')}}">
 							</div>

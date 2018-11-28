@@ -165,7 +165,7 @@ class GetOperationStatusResult
     }
     
     /**
-     * Gets the error.
+     * Gets the errors.
      * 
      * @return ServiceException
      */
@@ -175,9 +175,9 @@ class GetOperationStatusResult
     }
     
     /**
-     * Sets the error.
+     * Sets the errors.
      * 
-     * @param ServiceException $error The error.
+     * @param ServiceException $error The errors.
      * 
      * @return none
      */

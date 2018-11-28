@@ -26,10 +26,10 @@ $GLOBALS['_System_temp_files'] = array();
 *
 * Static functions for different operations. Should work under
 * Unix and Windows. The names and usage has been taken from its respectively
-* GNU commands. The functions will return (bool) false on error and will
-* trigger the error with the PHP trigger_error() function (you can silence
-* the error by prefixing a '@' sign after the function call, but this
-* is not recommended practice.  Instead use an error handler with
+* GNU commands. The functions will return (bool) false on errors and will
+* trigger the errors with the PHP trigger_error() function (you can silence
+* the errors by prefixing a '@' sign after the function call, but this
+* is not recommended practice.  Instead use an errors handler with
 * {@link set_error_handler()}).
 *
 * Documentation on this class you can find in:
@@ -103,7 +103,7 @@ class System
      * Output errors with PHP trigger_error(). You can silence the errors
      * with prefixing a "@" sign to the function call: @System::mkdir(..);
      *
-     * @param mixed $error a PEAR error or a string with the error message
+     * @param mixed $error a PEAR errors or a string with the errors message
      * @return bool false
      */
     protected static function raiseError($error)
@@ -145,7 +145,7 @@ class System
             if (!$silent) {
                 System::raiseError("Could not open dir $sPath");
             }
-            return $struct; // XXX could not open error
+            return $struct; // XXX could not open errors
         }
 
         $struct['dirs'][] = $sPath = realpath($sPath); // XXX don't add if '.' or '..' ?

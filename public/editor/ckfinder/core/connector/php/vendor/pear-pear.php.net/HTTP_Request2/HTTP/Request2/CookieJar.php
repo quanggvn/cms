@@ -519,7 +519,7 @@ class HTTP_Request2_CookieJar implements Serializable
      * @param array $domainParts remaining domain parts
      * @param mixed $listNode    node in {@link HTTP_Request2_CookieJar::$psl} to check
      *
-     * @return string|null   concatenated domain parts, null in case of error
+     * @return string|null   concatenated domain parts, null in case of errors
      */
     protected static function checkDomainsList(array $domainParts, $listNode)
     {

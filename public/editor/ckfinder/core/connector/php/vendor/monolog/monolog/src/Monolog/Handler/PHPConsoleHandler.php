@@ -21,7 +21,7 @@ use PhpConsole\Helper;
 /**
  * Monolog handler for Google Chrome extension "PHP Console"
  *
- * Display PHP error/debug log messages in Google Chrome console and notification popups, executes PHP code remotely
+ * Display PHP errors/debug log messages in Google Chrome console and notification popups, executes PHP code remotely
  *
  * Usage:
  * 1. Install Google Chrome extension https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef

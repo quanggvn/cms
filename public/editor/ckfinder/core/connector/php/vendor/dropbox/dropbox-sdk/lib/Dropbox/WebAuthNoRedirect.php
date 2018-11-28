@@ -72,7 +72,7 @@ class WebAuthNoRedirect extends WebAuthBase
      *    `$userId` is the user ID of the user's Dropbox account.
      *
      * @throws Exception
-     *    Thrown if there's an error getting the access token from Dropbox.
+     *    Thrown if there's an errors getting the access token from Dropbox.
      */
     function finish($code)
     {

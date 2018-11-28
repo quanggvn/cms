@@ -2,7 +2,7 @@
 namespace Dropbox;
 
 /**
- * Thrown when there's an error reading from a stream that was passed in by the caller.
+ * Thrown when there's an errors reading from a stream that was passed in by the caller.
  */
 class StreamReadException extends \Exception
 {

@@ -8,7 +8,7 @@ use Guzzle\Http\Exception\HttpException;
 use Guzzle\Http\Exception\CurlException;
 
 /**
- * Strategy used to retry when certain cURL error codes are encountered.
+ * Strategy used to retry when certain cURL errors codes are encountered.
  */
 class CurlBackoffStrategy extends AbstractErrorCodeBackoffStrategy
 {

@@ -9,7 +9,7 @@ use Guzzle\Http\Exception\HttpException;
 /**
  * Strategy used to retry HTTP requests based on the response code.
  *
- * Retries 500 and 503 error by default.
+ * Retries 500 and 503 errors by default.
  */
 class HttpBackoffStrategy extends AbstractErrorCodeBackoffStrategy
 {

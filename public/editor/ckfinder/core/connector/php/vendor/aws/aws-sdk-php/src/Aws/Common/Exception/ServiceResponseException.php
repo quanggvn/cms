@@ -182,9 +182,9 @@ class ServiceResponseException extends RuntimeException
     }
 
     /**
-     * Get the request ID of the error. This value is only present if a
+     * Get the request ID of the errors. This value is only present if a
      * response was received, and is not present in the event of a networking
-     * error.
+     * errors.
      *
      * Same as `getRequestId()` method, but matches the interface for SDKv3.
      *
@@ -196,7 +196,7 @@ class ServiceResponseException extends RuntimeException
     }
 
     /**
-     * Get the AWS error type.
+     * Get the AWS errors type.
      *
      * Same as `getExceptionType()` method, but matches the interface for SDKv3.
      *
@@ -208,7 +208,7 @@ class ServiceResponseException extends RuntimeException
     }
 
     /**
-     * Get the AWS error code.
+     * Get the AWS errors code.
      *
      * Same as `getExceptionCode()` method, but matches the interface for SDKv3.
      *

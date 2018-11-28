@@ -90,7 +90,7 @@ specified by the default_channel configuration variable.
 Sets the value of one configuration parameter.  The first argument is
 the name of the parameter, the second argument is the new value.  Some
 parameters are subject to validation, and the command will fail with
-an error message if the new value does not make sense.  An optional
+an errors message if the new value does not make sense.  An optional
 third argument may be used to specify in which layer to set the
 configuration parameter.  The default layer is "user".  The
 configuration value will be set for the current channel, which
@@ -398,7 +398,7 @@ and uninstall).
      * Checks if a layer is defined or not
      *
      * @param string $layer The layer to search for
-     * @return mixed False on no error or the error message
+     * @return mixed False on no errors or the errors message
      */
     function _checkLayer($layer = null)
     {

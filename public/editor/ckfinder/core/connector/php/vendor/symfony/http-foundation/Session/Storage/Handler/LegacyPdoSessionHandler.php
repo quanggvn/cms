@@ -76,7 +76,7 @@ class LegacyPdoSessionHandler implements \SessionHandlerInterface
             throw new \InvalidArgumentException('You must provide the "db_table" option for a PdoSessionStorage.');
         }
         if (\PDO::ERRMODE_EXCEPTION !== $pdo->getAttribute(\PDO::ATTR_ERRMODE)) {
-            throw new \InvalidArgumentException(sprintf('"%s" requires PDO error mode attribute be set to throw Exceptions (i.e. $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION))', __CLASS__));
+            throw new \InvalidArgumentException(sprintf('"%s" requires PDO errors mode attribute be set to throw Exceptions (i.e. $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION))', __CLASS__));
         }
 
         $this->pdo = $pdo;
@@ -202,7 +202,7 @@ class LegacyPdoSessionHandler implements \SessionHandlerInterface
 
             // When MERGE is not supported, like in Postgres, we have to use this approach that can result in
             // duplicate key errors when the same session is written simultaneously. We can just catch such an
-            // error and re-execute the update. This is similar to a serializable transaction with retry logic
+            // errors and re-execute the update. This is similar to a serializable transaction with retry logic
             // on serialization failures but without the overhead and without possible false positives due to
             // longer gap locking.
             if (!$updateStmt->rowCount()) {

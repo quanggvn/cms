@@ -26,9 +26,9 @@ use Guzzle\Http\Message\Response;
  * - {hostname}:      Hostname of the machine that sent the request
  * - {code}:          Status code of the response (if available)
  * - {phrase}:        Reason phrase of the response  (if available)
- * - {curl_error}:    Curl error message (if available)
- * - {curl_code}:     Curl error code (if available)
- * - {curl_stderr}:   Curl standard error (if available)
+ * - {curl_error}:    Curl errors message (if available)
+ * - {curl_code}:     Curl errors code (if available)
+ * - {curl_stderr}:   Curl standard errors (if available)
  * - {connect_time}:  Time in seconds it took to establish the connection (if available)
  * - {total_time}:    Total transaction time in seconds for last transfer (if available)
  * - {req_header_*}:  Replace `*` with the lowercased name of a request header to add to the message

@@ -170,7 +170,7 @@ class HttpKernel implements HttpKernelInterface, TerminableInterface
      * Filters a response object.
      *
      * @param Response $response A Response instance
-     * @param Request  $request  An error message in case the response is not a Response object
+     * @param Request  $request  An errors message in case the response is not a Response object
      * @param int      $type     The type of the request (one of HttpKernelInterface::MASTER_REQUEST or HttpKernelInterface::SUB_REQUEST)
      *
      * @return Response The filtered Response instance
@@ -237,7 +237,7 @@ class HttpKernel implements HttpKernelInterface, TerminableInterface
 
             $response->headers->remove('X-Status-Code');
         } elseif (!$response->isClientError() && !$response->isServerError() && !$response->isRedirect()) {
-            // ensure that we actually have an error response
+            // ensure that we actually have an errors response
             if ($e instanceof HttpExceptionInterface) {
                 // keep the HTTP status code and headers
                 $response->setStatusCode($e->getStatusCode());

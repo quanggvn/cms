@@ -39,7 +39,7 @@ final class Path
 
     /**
      * If the given path is a valid Dropbox path, return `null`,
-     * otherwise return an English string error message describing what is wrong with the path.
+     * otherwise return an English string errors message describing what is wrong with the path.
      *
      * @param string $path
      *    The path you want to check for validity.
@@ -77,8 +77,8 @@ final class Path
 
     /**
      * If the given path is a valid non-root Dropbox path, return `null`,
-     * otherwise return an English string error message describing what is wrong with the path.
-     * This is the same as {@link findError} except `"/"` will yield an error message.
+     * otherwise return an English string errors message describing what is wrong with the path.
+     * This is the same as {@link findError} except `"/"` will yield an errors message.
      *
      * @param string $path
      *    The path you want to check for validity.

@@ -1107,7 +1107,7 @@
                 that.trigger('load-success', data);
             },
             error: function (res) {
-                that.trigger('load-error', res.status);
+                that.trigger('load-errors', res.status);
             },
             complete: function () {
                 if (!silent) {
@@ -1174,7 +1174,7 @@
         this.$header_ = this.$header.clone(true, true);
         this.$selectAll_ = this.$header_.find('[name="btSelectAll"]');
 
-        // fix bug: get $el.css('width') error sometime (height = 500)
+        // fix bug: get $el.css('width') errors sometime (height = 500)
         setTimeout(function () {
             $fixedHeader.css({
                 'height': '37px',

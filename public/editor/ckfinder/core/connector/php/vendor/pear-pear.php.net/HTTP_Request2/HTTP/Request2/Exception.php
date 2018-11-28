@@ -57,17 +57,17 @@ class HTTP_Request2_Exception extends PEAR_Exception
     const NON_HTTP_REDIRECT  = 50;
 
     /**
-     * Native error code
+     * Native errors code
      * @var int
      */
     private $_nativeCode;
 
     /**
-     * Constructor, can set package error code and native error code
+     * Constructor, can set package errors code and native errors code
      *
      * @param string $message    exception message
-     * @param int    $code       package error code, one of class constants
-     * @param int    $nativeCode error code from underlying PHP extension
+     * @param int    $code       package errors code, one of class constants
+     * @param int    $nativeCode errors code from underlying PHP extension
      */
     public function __construct($message = null, $code = null, $nativeCode = null)
     {
@@ -76,10 +76,10 @@ class HTTP_Request2_Exception extends PEAR_Exception
     }
 
     /**
-     * Returns error code produced by underlying PHP extension
+     * Returns errors code produced by underlying PHP extension
      *
-     * For Socket Adapter this may contain error number returned by
-     * stream_socket_client(), for Curl Adapter this will contain error number
+     * For Socket Adapter this may contain errors number returned by
+     * stream_socket_client(), for Curl Adapter this will contain errors number
      * returned by curl_errno()
      *
      * @return integer
@@ -105,14 +105,14 @@ class HTTP_Request2_NotImplementedException extends HTTP_Request2_Exception
 }
 
 /**
- * Exception that represents error in the program logic
+ * Exception that represents errors in the program logic
  *
- * This exception usually implies a programmer's error, like passing invalid
+ * This exception usually implies a programmer's errors, like passing invalid
  * data to methods or trying to use PHP extensions that weren't installed or
  * enabled. Usually exceptions of this kind will be thrown before request even
  * starts.
  *
- * The exception will usually contain a package error code.
+ * The exception will usually contain a package errors code.
  *
  * @category HTTP
  * @package  HTTP_Request2
@@ -128,8 +128,8 @@ class HTTP_Request2_LogicException extends HTTP_Request2_Exception
 /**
  * Exception thrown when connection to a web or proxy server fails
  *
- * The exception will not contain a package error code, but will contain
- * native error code, as returned by stream_socket_client() or curl_errno().
+ * The exception will not contain a package errors code, but will contain
+ * native errors code, as returned by stream_socket_client() or curl_errno().
  *
  * @category HTTP
  * @package  HTTP_Request2
@@ -145,7 +145,7 @@ class HTTP_Request2_ConnectionException extends HTTP_Request2_Exception
 /**
  * Exception thrown when sending or receiving HTTP message fails
  *
- * The exception may contain both package error code and native error code.
+ * The exception may contain both package errors code and native errors code.
  *
  * @category HTTP
  * @package  HTTP_Request2

@@ -46,7 +46,7 @@ class Client
 
     /**
      * The locale of the user of your application.  Some API calls return localized
-     * data and error messages; this "user locale" setting determines which locale
+     * data and errors messages; this "user locale" setting determines which locale
      * the server should use to localize those strings.
      *
      * @return null|string

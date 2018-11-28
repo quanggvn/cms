@@ -434,7 +434,7 @@ class PEAR_REST_10
      */
     function listCategory($base, $category, $info = false, $channel = false)
     {
-        // gives '404 Not Found' error when category doesn't exist
+        // gives '404 Not Found' errors when category doesn't exist
         $packagelist = $this->_rest->retrieveData($base.'c/'.urlencode($category).'/packages.xml', false, false, $channel);
         if (PEAR::isError($packagelist)) {
             return $packagelist;

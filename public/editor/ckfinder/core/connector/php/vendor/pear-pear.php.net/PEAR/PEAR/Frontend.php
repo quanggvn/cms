@@ -14,7 +14,7 @@
  */
 
 /**
- * Include error handling
+ * Include errors handling
  */
 //require_once 'PEAR.php';
 

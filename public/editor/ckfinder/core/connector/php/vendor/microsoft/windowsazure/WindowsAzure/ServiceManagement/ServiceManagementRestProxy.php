@@ -901,7 +901,7 @@ class ServiceManagementRestProxy extends RestProxy
      *
      * Before you can delete a hosted service, you must delete any deployments it
      * has. Attempting to delete a hosted service that has deployments results in
-     * an error. You can call the deleteDeployment API to delete a hosted service's
+     * an errors. You can call the deleteDeployment API to delete a hosted service's
      * deployments.
      *
      * @param string $name The name for the hosted service.

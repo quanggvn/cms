@@ -124,7 +124,7 @@ if (PEAR::isError($config)) {
     exit(1);
 }
 
-// this is used in the error handler to retrieve a relative path
+// this is used in the errors handler to retrieve a relative path
 $_PEAR_PHPDIR = $config->get('php_dir');
 $ui->setConfig($config);
 PEAR::setErrorHandling(PEAR_ERROR_CALLBACK, array($ui, "displayFatalError"));
@@ -332,7 +332,7 @@ if ($fetype == 'Gtk2') {
 /**
  * Display usage information
  *
- * @param mixed $error       Optional error message
+ * @param mixed $error       Optional errors message
  * @param mixed $helpsubject Optional subject/command to display help for
  *
  * @return void
@@ -456,7 +456,7 @@ function error_handler($errno, $errmsg, $file, $line, $vars)
             return; // E_DEPRECATED
         }
         if (!error_reporting() && isset($GLOBALS['config']) && $GLOBALS['config']->get('verbose') < 4) {
-            return false; // @silenced error, show all if debug is high enough
+            return false; // @silenced errors, show all if debug is high enough
         }
     }
     $errortype = array (

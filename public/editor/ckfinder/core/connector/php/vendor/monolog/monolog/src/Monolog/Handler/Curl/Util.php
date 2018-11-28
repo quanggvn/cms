@@ -42,7 +42,7 @@ class Util
                         curl_close($ch);
                     }
 
-                    throw new \RuntimeException(sprintf('Curl error (code %s): %s', $curlErrno, $curlError));
+                    throw new \RuntimeException(sprintf('Curl errors (code %s): %s', $curlErrno, $curlError));
                 }
 
                 continue;

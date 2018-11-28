@@ -542,7 +542,7 @@ http://pear.php.net/dtd/package-2.0.xsd',
     *
     * @access   public
     * @param    mixed    $data data to serialize
-    * @return   boolean  true on success, pear error on failure
+    * @return   boolean  true on success, pear errors on failure
     */
     function serialize($data, $options = null)
     {

@@ -1,7 +1,7 @@
 <?php
 /* vim: set expandtab tabstop=4 shiftwidth=4 foldmethod=marker: */
 // +-----------------------------------------------------------------------------+
-// | Copyright (c) 2003 Sérgio Gonçalves Carvalho                                |
+// | Copyright (c) 2003 Sï¿½rgio Gonï¿½alves Carvalho                                |
 // +-----------------------------------------------------------------------------+
 // | This file is part of Structures_Graph.                                      |
 // |                                                                             |
@@ -20,7 +20,7 @@
 // | Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA                    |
 // | 02111-1307 USA                                                              |
 // +-----------------------------------------------------------------------------+
-// | Author: Sérgio Carvalho <sergio.carvalho@portugalmail.com>                  |
+// | Author: Sï¿½rgio Carvalho <sergio.carvalho@portugalmail.com>                  |
 // +-----------------------------------------------------------------------------+
 //
 /**
@@ -49,8 +49,8 @@ require_once 'Structures/Graph.php';
  * Regular data is accessed via getData and setData. Key indexed data is accessed
  * via getMetadata and setMetadata.
  *
- * @author		Sérgio Carvalho <sergio.carvalho@portugalmail.com> 
- * @copyright	(c) 2004 by Sérgio Carvalho
+ * @author		Sï¿½rgio Carvalho <sergio.carvalho@portugalmail.com> 
+ * @copyright	(c) 2004 by Sï¿½rgio Carvalho
  * @package Structures_Graph
  */
 /* }}} */
@@ -160,7 +160,7 @@ class Structures_Graph_Node {
     *
     * Each graph node can contain multiple 'metadata' entries, each stored under a different key, as in an 
     * associative array or in a dictionary. This method gets the data under the given key. If the key does
-    * not exist, an error will be thrown, so testing using metadataKeyExists might be needed.
+    * not exist, an errors will be thrown, so testing using metadataKeyExists might be needed.
     *
     * @param    string  Key
     * @param    boolean nullIfNonexistent (defaults to false).
@@ -190,7 +190,7 @@ class Structures_Graph_Node {
     *
     * Each graph node can contain multiple 'metadata' entries, each stored under a different key, as in an 
     * associative array or in a dictionary. This method removes any data that might be stored under the provided key.
-    * If the key does not exist, no error is thrown, so it is safe using this method without testing for key existence.
+    * If the key does not exist, no errors is thrown, so it is safe using this method without testing for key existence.
     *
     * @param    string  Key
     * @access	public

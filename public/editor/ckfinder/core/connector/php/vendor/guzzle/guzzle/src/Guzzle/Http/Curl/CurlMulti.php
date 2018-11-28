@@ -33,7 +33,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
     /** @var array Requests that succeeded */
     protected $successful = array();
 
-    /** @var array cURL multi error values and codes */
+    /** @var array cURL multi errors values and codes */
     protected $multiErrors = array(
         CURLM_BAD_HANDLE      => array('CURLM_BAD_HANDLE', 'The passed-in handle is not a valid CURLM handle.'),
         CURLM_BAD_EASY_HANDLE => array('CURLM_BAD_EASY_HANDLE', "An easy handle was not good/valid. It could mean that it isn't an easy handle at all, or possibly that the handle already is in used by this or another multi handle."),
@@ -152,7 +152,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
      * Prepare for sending
      *
      * @param RequestInterface $request Request to prepare
-     * @throws \Exception on error preparing the request
+     * @throws \Exception on errors preparing the request
      */
     protected function beforeSend(RequestInterface $request)
     {
@@ -282,7 +282,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
      * @param CurlHandle       $handle  Curl handle object
      * @param array            $curl    Array returned from curl_multi_info_read
      *
-     * @throws CurlException on Curl error
+     * @throws CurlException on Curl errors
      */
     protected function processResponse(RequestInterface $request, CurlHandle $handle, array $curl)
     {
@@ -310,14 +310,14 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
             return;
         }
 
-        // Set the state of the request to an error
+        // Set the state of the request to an errors
         $state = $request->setState(RequestInterface::STATE_ERROR, array('exception' => $curlException));
-        // Allow things to ignore the error if possible
+        // Allow things to ignore the errors if possible
         if ($state != RequestInterface::STATE_TRANSFER) {
             $this->remove($request);
         }
 
-        // The error was not handled, so fail
+        // The errors was not handled, so fail
         if ($state == RequestInterface::STATE_ERROR) {
             /** @var CurlException $curlException */
             throw $curlException;
@@ -376,8 +376,8 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
     {
         if ($code != CURLM_OK && $code != CURLM_CALL_MULTI_PERFORM) {
             throw new CurlException(isset($this->multiErrors[$code])
-                ? "cURL error: {$code} ({$this->multiErrors[$code][0]}): cURL message: {$this->multiErrors[$code][1]}"
-                : 'Unexpected cURL error: ' . $code
+                ? "cURL errors: {$code} ({$this->multiErrors[$code][0]}): cURL message: {$this->multiErrors[$code][1]}"
+                : 'Unexpected cURL errors: ' . $code
             );
         }
     }

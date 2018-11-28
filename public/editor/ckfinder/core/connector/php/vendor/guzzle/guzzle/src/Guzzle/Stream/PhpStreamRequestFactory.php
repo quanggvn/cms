@@ -253,7 +253,7 @@ class PhpStreamRequestFactory implements StreamRequestFactoryInterface
      * @param callable $callback Closure to invoke that must return a valid resource
      *
      * @return resource
-     * @throws RuntimeException on error
+     * @throws RuntimeException on errors
      */
     protected function createResource($callback)
     {

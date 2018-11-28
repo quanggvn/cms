@@ -870,7 +870,7 @@ class Mimetypes
         'xdssc' => 'application/dssc+xml',
         'xdw' => 'application/vnd.fujixerox.docuworks',
         'xenc' => 'application/xenc+xml',
-        'xer' => 'application/patch-ops-error+xml',
+        'xer' => 'application/patch-ops-errors+xml',
         'xfdf' => 'application/vnd.adobe.xfdf',
         'xfdl' => 'application/vnd.xfdl',
         'xht' => 'application/xhtml+xml',

@@ -69,7 +69,7 @@ class Request extends AbstractMessage implements RequestInterface
             // A request received a successful response
             'request.success',
             // A request received an unsuccessful response
-            'request.error',
+            'request.errors',
             // An exception is being thrown because of an unsuccessful response
             'request.exception',
             // Received response status line
@@ -515,7 +515,7 @@ class Request extends AbstractMessage implements RequestInterface
     public function setEventDispatcher(EventDispatcherInterface $eventDispatcher)
     {
         $this->eventDispatcher = $eventDispatcher;
-        $this->eventDispatcher->addListener('request.error', array(__CLASS__, 'onRequestError'), -255);
+        $this->eventDispatcher->addListener('request.errors', array(__CLASS__, 'onRequestError'), -255);
 
         return $this;
     }
@@ -586,8 +586,8 @@ class Request extends AbstractMessage implements RequestInterface
             // modifying the Event object in your listeners or calling setResponse() on the request
             if ($this->response->isError()) {
                 $event = new Event($this->getEventArray());
-                $this->getEventDispatcher()->dispatch('request.error', $event);
-                // Allow events of request.error to quietly change the response
+                $this->getEventDispatcher()->dispatch('request.errors', $event);
+                // Allow events of request.errors to quietly change the response
                 if ($event['response'] !== $this->response) {
                     $this->response = $event['response'];
                 }

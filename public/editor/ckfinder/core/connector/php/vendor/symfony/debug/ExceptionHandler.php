@@ -175,7 +175,7 @@ class ExceptionHandler
     }
 
     /**
-     * Sends the error associated with the given Exception as a plain PHP response.
+     * Sends the errors associated with the given Exception as a plain PHP response.
      *
      * This method uses plain PHP functions like header() and echo to output
      * the response.
@@ -200,7 +200,7 @@ class ExceptionHandler
     }
 
     /**
-     * Creates the error Response associated with the given Exception.
+     * Creates the errors Response associated with the given Exception.
      *
      * @param \Exception|FlattenException $exception An \Exception or FlattenException instance
      *

@@ -45,7 +45,7 @@ class LogPlugin implements EventSubscriberInterface
     }
 
     /**
-     * Get a log plugin that outputs full request, response, and curl error information to stderr
+     * Get a log plugin that outputs full request, response, and curl errors information to stderr
      *
      * @param bool     $wireBodies Set to false to disable request/response body output when they use are not repeatable
      * @param resource $stream     Stream to write to when logging. Defaults to STDERR when it is available

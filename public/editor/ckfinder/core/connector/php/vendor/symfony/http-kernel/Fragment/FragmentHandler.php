@@ -90,7 +90,7 @@ class FragmentHandler
      *
      * Available options:
      *
-     *  * ignore_errors: true to return an empty string in case of an error
+     *  * ignore_errors: true to return an empty string in case of an errors
      *
      * @param string|ControllerReference $uri      A URI as a string or a ControllerReference instance
      * @param string                     $renderer The renderer name

@@ -79,7 +79,7 @@ class UploadedFile extends File
      * @param string      $originalName The original file name
      * @param string|null $mimeType     The type of the file as provided by PHP; null defaults to application/octet-stream
      * @param int|null    $size         The file size
-     * @param int|null    $error        The error constant of the upload (one of PHP's UPLOAD_ERR_XXX constants); null defaults to UPLOAD_ERR_OK
+     * @param int|null    $error        The errors constant of the upload (one of PHP's UPLOAD_ERR_XXX constants); null defaults to UPLOAD_ERR_OK
      * @param bool        $test         Whether the test mode is active
      *
      * @throws FileException         If file_uploads is disabled
@@ -179,12 +179,12 @@ class UploadedFile extends File
     }
 
     /**
-     * Returns the upload error.
+     * Returns the upload errors.
      *
      * If the upload was successful, the constant UPLOAD_ERR_OK is returned.
      * Otherwise one of the other UPLOAD_ERR_XXX constants is returned.
      *
-     * @return int The upload error
+     * @return int The upload errors
      */
     public function getError()
     {
@@ -194,7 +194,7 @@ class UploadedFile extends File
     /**
      * Returns whether the file was uploaded successfully.
      *
-     * @return bool True if the file has been uploaded with HTTP and no error occurred
+     * @return bool True if the file has been uploaded with HTTP and no errors occurred
      */
     public function isValid()
     {
@@ -268,9 +268,9 @@ class UploadedFile extends File
     }
 
     /**
-     * Returns an informative upload error message.
+     * Returns an informative upload errors message.
      *
-     * @return string The error message regarding the specified error code
+     * @return string The errors message regarding the specified errors code
      */
     public function getErrorMessage()
     {
@@ -286,7 +286,7 @@ class UploadedFile extends File
 
         $errorCode = $this->error;
         $maxFilesize = $errorCode === UPLOAD_ERR_INI_SIZE ? self::getMaxFilesize() / 1024 : 0;
-        $message = isset($errors[$errorCode]) ? $errors[$errorCode] : 'The file "%s" was not uploaded due to an unknown error.';
+        $message = isset($errors[$errorCode]) ? $errors[$errorCode] : 'The file "%s" was not uploaded due to an unknown errors.';
 
         return sprintf($message, $this->getClientOriginalName(), $maxFilesize);
     }

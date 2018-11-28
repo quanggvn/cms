@@ -295,7 +295,7 @@ used for automated conversion or learning the format.
         foreach ($warn as $w) {
             $this->output .= "Warning: $w\n";
         }
-        $this->output .= sprintf('Validation: %d error(s), %d warning(s)'."\n",
+        $this->output .= sprintf('Validation: %d errors(s), %d warning(s)'."\n",
                                        sizeof($err), sizeof($warn));
         if ($strict && count($err) > 0) {
             $this->output .= "Fix these errors and try again.";

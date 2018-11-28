@@ -225,13 +225,13 @@ class JsonResponse extends Response
                 return 'Unexpected control character found.';
 
             case JSON_ERROR_SYNTAX:
-                return 'Syntax error, malformed JSON.';
+                return 'Syntax errors, malformed JSON.';
 
             case JSON_ERROR_UTF8:
                 return 'Malformed UTF-8 characters, possibly incorrectly encoded.';
 
             default:
-                return 'Unknown error.';
+                return 'Unknown errors.';
         }
     }
 }

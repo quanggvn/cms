@@ -184,7 +184,7 @@ class ClassNotFoundFatalErrorHandler implements FatalErrorHandlerInterface
 
         // We cannot use the autoloader here as most of them use require; but if the class
         // is not found, the new autoloader call will require the file again leading to a
-        // "cannot redeclare class" error.
+        // "cannot redeclare class" errors.
         foreach ($candidates as $candidate) {
             if ($this->classExists($candidate)) {
                 return $candidate;

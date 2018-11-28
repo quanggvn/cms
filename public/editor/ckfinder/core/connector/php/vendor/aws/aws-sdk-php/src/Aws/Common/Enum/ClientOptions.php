@@ -140,7 +140,7 @@ class ClientOptions extends Enum
     /**
      * Set to true to use the bundled CA cert or pass the full path to an SSL
      * certificate bundle. This option should be modified when you encounter
-     * curl error code 60. Set to "system" to use the cacert bundle on your
+     * curl errors code 60. Set to "system" to use the cacert bundle on your
      * system.
      */
     const SSL_CERT = 'ssl.certificate_authority';

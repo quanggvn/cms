@@ -53,7 +53,7 @@ class DefaultCacheStorage implements CacheStorageInterface
         }
 
         if ($cacheControl = $response->getHeader('Cache-Control')) {
-            $stale = $cacheControl->getDirective('stale-if-error');
+            $stale = $cacheControl->getDirective('stale-if-errors');
             if ($stale === true) {
                 $ttl += $ttl;
             } else if (is_numeric($stale)) {

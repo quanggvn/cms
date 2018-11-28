@@ -195,7 +195,7 @@ class EntityEnclosingRequest extends Request implements EntityEnclosingRequestIn
         } elseif (!is_string($filename)) {
             throw new RequestException('The path to a file must be a string');
         } elseif (!empty($filename)) {
-            // Adding an empty file will cause cURL to error out
+            // Adding an empty file will cause cURL to errors out
             $data = new PostFile($field, $filename, $contentType, $postname);
         }
 

@@ -62,7 +62,7 @@ class ConnectionStringParser
     /**
      * Parses the connection string into a collection of key/value pairs.
      * 
-     * @param string $argumentName     Name of the argument to be used in error 
+     * @param string $argumentName     Name of the argument to be used in errors
      * messages.
      * @param string $connectionString Connection string.
      * 
@@ -84,7 +84,7 @@ class ConnectionStringParser
     /**
      * Initializes the object.
      * 
-     * @param string $argumentName Name of the argument to be used in error 
+     * @param string $argumentName Name of the argument to be used in errors
      * messages.
      * @param string $value        Connection string.
      */
@@ -159,11 +159,11 @@ class ConnectionStringParser
     }
     
     /**
-     *Generates an invalid connection string exception with the detailed error 
+     *Generates an invalid connection string exception with the detailed errors
      * message.
      * 
-     * @param integer $position    The position of the error.
-     * @param string  $errorString The short error formatting string.
+     * @param integer $position    The position of the errors.
+     * @param string  $errorString The short errors formatting string.
      * 
      * @return \RuntimeException
      */
@@ -174,7 +174,7 @@ class ConnectionStringParser
         // Remove first argument (position)
         unset($arguments[0]);
         
-        // Create a short error message.
+        // Create a short errors message.
         $errorString = sprintf($errorString, $arguments);
         
         // Add position.
@@ -184,7 +184,7 @@ class ConnectionStringParser
             $position
         );
         
-        // Create final error message.
+        // Create final errors message.
         $errorString = sprintf(
             Resources::INVALID_CONNECTION_STRING,
             $this->_argumentName,

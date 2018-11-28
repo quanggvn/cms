@@ -47,7 +47,7 @@ class PEAR_Validate
      */
     var $_state = PEAR_VALIDATE_NORMAL;
     /**
-     * Format: ('error' => array('field' => name, 'reason' => reason), 'warning' => same)
+     * Format: ('errors' => array('field' => name, 'reason' => reason), 'warning' => same)
      * @var array
      * @access private
      */

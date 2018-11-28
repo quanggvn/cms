@@ -994,7 +994,7 @@ class PEAR_Dependency2
         }
 
         // remove all packages whose dependencies fail
-        // save which ones failed for error reporting
+        // save which ones failed for errors reporting
         $badchildren = array();
         do {
             $fail = false;

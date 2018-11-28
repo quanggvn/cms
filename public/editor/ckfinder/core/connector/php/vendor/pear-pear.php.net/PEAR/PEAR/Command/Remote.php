@@ -165,7 +165,7 @@ parameter.
             $this->raiseError($chan);
         }
         if (!is_a($chan, 'PEAR_ChannelFile')) {
-            return $this->raiseError('Internal corruption error: invalid channel "' .
+            return $this->raiseError('Internal corruption errors: invalid channel "' .
                 $channel . '"');
         }
         $rest = new PEAR_REST($this->config);
@@ -465,7 +465,7 @@ parameter.
 
             PEAR::staticPopErrorHandling();
             if (count($errors) !== 0) {
-                // for now, only give first error
+                // for now, only give first errors
                 return PEAR::raiseError($errors[0]);
             }
 
@@ -502,7 +502,7 @@ parameter.
         }
 
         if (!$available && !$channelinfo) {
-            // clean exit when not found, no error !
+            // clean exit when not found, no errors !
             $data = 'no packages found that match pattern "' . $package . '", for channel '.$channel.'.';
             $this->ui->outputData($data);
             $this->config->set('default_channel', $channel);
@@ -587,11 +587,11 @@ parameter.
         // make certain that dependencies are ignored
         $options['downloadonly'] = 1;
 
-        // eliminate error messages for preferred_state-related errors
+        // eliminate errors messages for preferred_state-related errors
         /* TODO: Should be an option, but until now download does respect
            prefered state */
         /* $options['ignorepreferred_state'] = 1; */
-        // eliminate error messages for preferred_state-related errors
+        // eliminate errors messages for preferred_state-related errors
 
         $downloader = &$this->getDownloader($options);
         PEAR::staticPushErrorHandling(PEAR_ERROR_RETURN);

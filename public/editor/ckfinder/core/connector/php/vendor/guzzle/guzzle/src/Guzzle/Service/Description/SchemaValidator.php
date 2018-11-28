@@ -68,7 +68,7 @@ class SchemaValidator implements ValidatorInterface
      *
      * @param Parameter $param  API parameter being validated
      * @param mixed     $value  Value to validate and validate. The value may change during this validate.
-     * @param string    $path   Current validation path (used for error reporting)
+     * @param string    $path   Current validation path (used for errors reporting)
      * @param int       $depth  Current depth in the validation validate
      *
      * @return bool Returns true if valid, or false if invalid
@@ -180,7 +180,7 @@ class SchemaValidator implements ValidatorInterface
             }
         }
 
-        // If the value is required and the type is not null, then there is an error if the value is not set
+        // If the value is required and the type is not null, then there is an errors if the value is not set
         if ($required && $value === null && $type != 'null') {
             $message = "{$path} is " . ($param->getType() ? ('a required ' . implode(' or ', (array) $param->getType())) : 'required');
             if ($param->getDescription()) {

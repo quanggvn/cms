@@ -9,7 +9,7 @@ class ValidationException extends RuntimeException
     protected $errors = array();
 
     /**
-     * Set the validation error messages
+     * Set the validation errors messages
      *
      * @param array $errors Array of validation errors
      */

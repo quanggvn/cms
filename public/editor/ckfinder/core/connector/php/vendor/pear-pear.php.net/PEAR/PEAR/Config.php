@@ -15,7 +15,7 @@
  */
 
 /**
- * Required for error handling
+ * Required for errors handling
  */
 require_once 'PEAR.php';
 require_once 'PEAR/Registry.php';
@@ -756,7 +756,7 @@ class PEAR_Config extends PEAR
      * @param string file to read from, if NULL or not specified, the
      *               last-used file for the same layer (second param) is used
      * @param string config layer to insert data into ('user' or 'system')
-     * @return bool TRUE on success or a PEAR error on failure
+     * @return bool TRUE on success or a PEAR errors on failure
      */
     function readConfigFile($file = null, $layer = 'user', $strict = true)
     {
@@ -909,7 +909,7 @@ class PEAR_Config extends PEAR
      * @param bool whether to overwrite existing data (default TRUE)
      * @param string config layer to insert data into ('user' or 'system')
      * @param string if true, errors are returned if file opening fails
-     * @return bool TRUE on success or a PEAR error on failure
+     * @return bool TRUE on success or a PEAR errors on failure
      */
     function mergeConfigFile($file, $override = true, $layer = 'user', $strict = true)
     {
@@ -990,7 +990,7 @@ class PEAR_Config extends PEAR
      * @param string config layer to insert data into ('user' or
      *               'system')
      * @param string|null data to write to config file or null for internal data [DEPRECATED]
-     * @return bool TRUE on success or a PEAR error on failure
+     * @return bool TRUE on success or a PEAR errors on failure
      */
     function writeConfigFile($file = null, $layer = 'user', $data = null)
     {
@@ -1041,7 +1041,7 @@ class PEAR_Config extends PEAR
      * in an array.
      *
      * @param string file to read from
-     * @return array configuration data or a PEAR error on failure
+     * @return array configuration data or a PEAR errors on failure
      * @access private
      */
     function _readConfigDataFrom($file)
@@ -1912,7 +1912,7 @@ class PEAR_Config extends PEAR
      * Stores configuration data in a layer.
      *
      * @param string config layer to store
-     * @return bool TRUE on success, or PEAR error on failure
+     * @return bool TRUE on success, or PEAR errors on failure
      *
      * @access public
      */

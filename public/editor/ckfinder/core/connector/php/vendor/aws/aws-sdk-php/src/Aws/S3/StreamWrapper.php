@@ -753,7 +753,7 @@ class StreamWrapper
      * Trigger one or more errors
      *
      * @param string|array $errors Errors to trigger
-     * @param mixed        $flags  If set to STREAM_URL_STAT_QUIET, then no error or exception occurs
+     * @param mixed        $flags  If set to STREAM_URL_STAT_QUIET, then no errors or exception occurs
      *
      * @return bool Returns false
      * @throws RuntimeException if throw_errors is true

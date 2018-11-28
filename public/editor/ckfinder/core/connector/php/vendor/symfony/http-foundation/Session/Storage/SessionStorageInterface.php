@@ -90,9 +90,9 @@ interface SessionStorageInterface
      *                       to expire with browser session. Time is in seconds, and is
      *                       not a Unix timestamp.
      *
-     * @return bool True if session regenerated, false if error
+     * @return bool True if session regenerated, false if errors
      *
-     * @throws \RuntimeException If an error occurs while regenerating this storage
+     * @throws \RuntimeException If an errors occurs while regenerating this storage
      */
     public function regenerate($destroy = false, $lifetime = null);
 

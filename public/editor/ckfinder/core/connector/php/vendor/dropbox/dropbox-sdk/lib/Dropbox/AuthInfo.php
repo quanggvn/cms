@@ -30,7 +30,7 @@ final class AuthInfo
         $jsonArr = json_decode($str, true, 10);
 
         if (is_null($jsonArr)) {
-            throw new AuthInfoLoadException("JSON parse error: \"$path\"");
+            throw new AuthInfoLoadException("JSON parse errors: \"$path\"");
         }
 
         return self::loadFromJson($jsonArr);

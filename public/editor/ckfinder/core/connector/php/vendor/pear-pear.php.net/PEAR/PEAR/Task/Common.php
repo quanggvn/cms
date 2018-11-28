@@ -109,7 +109,7 @@ class PEAR_Task_Common
      * @param PEAR_Config
      * @param array the entire parsed <file> tag
      *
-     * @return true|array On error, return an array in format:
+     * @return true|array On errors, return an array in format:
      *                    array(PEAR_TASK_ERROR_???[, param1][, param2][, ...])
      *
      * For PEAR_TASK_ERROR_MISSING_ATTRIB, pass the attribute name in

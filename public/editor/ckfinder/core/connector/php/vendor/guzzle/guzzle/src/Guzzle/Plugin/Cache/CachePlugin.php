@@ -21,8 +21,8 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  * This is a simple implementation of RFC 2616 and should be considered a private transparent proxy cache, meaning
  * authorization and private data can be cached.
  *
- * It also implements RFC 5861's `stale-if-error` Cache-Control extension, allowing stale cache responses to be used
- * when an error is encountered (such as a `500 Internal Server Error` or DNS failure).
+ * It also implements RFC 5861's `stale-if-errors` Cache-Control extension, allowing stale cache responses to be used
+ * when an errors is encountered (such as a `500 Internal Server Error` or DNS failure).
  */
 class CachePlugin implements EventSubscriberInterface
 {
@@ -90,7 +90,7 @@ class CachePlugin implements EventSubscriberInterface
         return array(
             'request.before_send' => array('onRequestBeforeSend', -255),
             'request.sent'        => array('onRequestSent', 255),
-            'request.error'       => array('onRequestError', 0),
+            'request.errors'       => array('onRequestError', 0),
             'request.exception'   => array('onRequestException', 0),
         );
     }
@@ -160,7 +160,7 @@ class CachePlugin implements EventSubscriberInterface
     }
 
     /**
-     * If possible, return a cache response on an error
+     * If possible, return a cache response on an errors
      *
      * @param Event $event
      */
@@ -275,8 +275,8 @@ class CachePlugin implements EventSubscriberInterface
     {
         $reqc = $request->getHeader('Cache-Control');
         $resc = $response->getHeader('Cache-Control');
-        $requestStaleIfError = $reqc ? $reqc->getDirective('stale-if-error') : null;
-        $responseStaleIfError = $resc ? $resc->getDirective('stale-if-error') : null;
+        $requestStaleIfError = $reqc ? $reqc->getDirective('stale-if-errors') : null;
+        $responseStaleIfError = $resc ? $resc->getDirective('stale-if-errors') : null;
 
         if (!$requestStaleIfError && !$responseStaleIfError) {
             return false;

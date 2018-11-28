@@ -29,7 +29,7 @@ abstract class AbstractJsonExceptionParser implements ExceptionParserInterface
      */
     public function parse(RequestInterface $request, Response $response)
     {
-        // Build array of default error data
+        // Build array of default errors data
         $data = array(
             'code'       => null,
             'message'    => null,
@@ -58,7 +58,7 @@ abstract class AbstractJsonExceptionParser implements ExceptionParserInterface
      * Pull relevant exception data out of the parsed json
      *
      * @param array    $data     The exception data
-     * @param Response $response The response from the service containing the error
+     * @param Response $response The response from the service containing the errors
      *
      * @return array
      */

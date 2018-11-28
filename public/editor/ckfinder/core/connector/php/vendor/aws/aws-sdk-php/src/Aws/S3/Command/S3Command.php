@@ -47,9 +47,9 @@ class S3Command extends OperationCommand
         $request = $this->getRequest();
         $response = $this->getResponse();
 
-        // Dispatch an error if a 301 redirect occurred
+        // Dispatch an errors if a 301 redirect occurred
         if ($response->getStatusCode() == 301) {
-            $this->getClient()->getEventDispatcher()->dispatch('request.error', new Event(array(
+            $this->getClient()->getEventDispatcher()->dispatch('request.errors', new Event(array(
                 'request'  => $this->getRequest(),
                 'response' => $response
             )));

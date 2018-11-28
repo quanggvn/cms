@@ -3,7 +3,7 @@
 namespace Guzzle\Plugin\Backoff;
 
 /**
- * Strategy used to retry when certain error codes are encountered
+ * Strategy used to retry when certain errors codes are encountered
  */
 abstract class AbstractErrorCodeBackoffStrategy extends AbstractBackoffStrategy
 {

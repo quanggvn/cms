@@ -27,7 +27,7 @@ use WindowsAzure\Common\Internal\Validate;
 
 
 /**
- * Represents error detail object used in media services
+ * Represents errors detail object used in media services
  *
  * @category  Microsoft
  * @package   WindowsAzure\MediaServices\Models
@@ -54,7 +54,7 @@ class ErrorDetail
     private $_message;
 
     /**
-     * Create error detail from array
+     * Create errors detail from array
      *
      * @param array $options Array containing values for object properties
      *
@@ -69,7 +69,7 @@ class ErrorDetail
     }
 
     /**
-     * Fill error detail from array
+     * Fill errors detail from array
      *
      * @param array $options Array containing values for object properties
      *

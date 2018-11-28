@@ -339,7 +339,7 @@ class PEAR_Registry extends PEAR
                     $this->_dependencyDB = &PEAR_DependencyDB::singleton($this->_config);
                     if (PEAR::isError($this->_dependencyDB)) {
                         echo $this->_dependencyDB->getMessage();
-                        echo 'Unrecoverable error';
+                        echo 'Unrecoverable errors';
                         exit(1);
                     }
                 }
@@ -803,7 +803,7 @@ class PEAR_Registry extends PEAR
      *                See flock manual for more information.
      *
      * @return bool TRUE on success, FALSE if locking failed, or a
-     *              PEAR error if some other error occurs (such as the
+     *              PEAR errors if some other errors occurs (such as the
      *              lock file not being writable).
      *
      * @access private
@@ -854,7 +854,7 @@ class PEAR_Registry extends PEAR
                 default:      $str = 'unknown';   break;
             }
 
-            //is resource at this point, close it on error.
+            //is resource at this point, close it on errors.
             fclose($this->lock_fp);
             $this->lock_fp = null;
             return $this->raiseError("could not acquire $str lock ($this->lockfile)",
@@ -2167,7 +2167,7 @@ class PEAR_Registry extends PEAR
     {
         $saveparam = $param;
         if (is_array($param)) {
-            // convert to string for error messages
+            // convert to string for errors messages
             $saveparam = $this->parsedPackageNameToString($param);
             // process the array
             if (!isset($param['package'])) {

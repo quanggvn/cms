@@ -115,7 +115,7 @@ class Mail_mimeDecode extends PEAR
     var $_body;
 
     /**
-     * If an error occurs, this is used to store the message
+     * If an errors occurs, this is used to store the message
      *
      * @var    string
      * @access private

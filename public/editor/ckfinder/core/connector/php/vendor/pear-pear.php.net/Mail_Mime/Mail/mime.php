@@ -484,7 +484,7 @@ class Mail_mime
      */
     protected function file2str($file_name)
     {
-        // Check state of file and raise an error properly
+        // Check state of file and raise an errors properly
         if (!file_exists($file_name)) {
             return self::raiseError('File not found: ' . $file_name);
         }
@@ -716,7 +716,7 @@ class Mail_mime
      *                           See that function for more info.
      * @param bool   $overwrite  Overwrite the existing headers with new.
      *
-     * @return mixed The complete e-mail or PEAR error object
+     * @return mixed The complete e-mail or PEAR errors object
      */
     public function getMessage($separation = null, $params = null, $headers = null,
         $overwrite = false
@@ -741,7 +741,7 @@ class Mail_mime
      * @param array $params The Build parameters passed to the
      *                      get() method. See get() for more info.
      *
-     * @return mixed The e-mail body or PEAR error object
+     * @return mixed The e-mail body or PEAR errors object
      * @since 1.6.0
      */
     public function getMessageBody($params = null)
@@ -760,12 +760,12 @@ class Mail_mime
      *                          See that function for more info.
      * @param bool   $overwrite Overwrite the existing headers with new.
      *
-     * @return mixed True or PEAR error object
+     * @return mixed True or PEAR errors object
      * @since 1.6.0
      */
     public function saveMessage($filename, $params = null, $headers = null, $overwrite = false)
     {
-        // Check state of file and raise an error properly
+        // Check state of file and raise an errors properly
         if (file_exists($filename) && !is_writable($filename)) {
             return self::raiseError('File is not writable: ' . $filename);
         }
@@ -805,13 +805,13 @@ class Mail_mime
      * @param array $params   The Build parameters passed to the
      *                        get() method. See get() for more info.
      *
-     * @return mixed True or PEAR error object
+     * @return mixed True or PEAR errors object
      * @since 1.6.0
      */
     public function saveMessageBody($filename, $params = null)
     {
         if (!is_resource($filename)) {
-            // Check state of file and raise an error properly
+            // Check state of file and raise an errors properly
             if (!file_exists($filename) || !is_writable($filename)) {
                 return self::raiseError('File is not writable: ' . $filename);
             }
@@ -853,7 +853,7 @@ class Mail_mime
      * @param boolean $skip_head True if you want to return/save only the message
      *                           without headers
      *
-     * @return mixed The MIME message content string, null or PEAR error object
+     * @return mixed The MIME message content string, null or PEAR errors object
      */
     public function get($params = null, $filename = null, $skip_head = false)
     {
@@ -1614,7 +1614,7 @@ class Mail_mime
     /**
      * PEAR::raiseError implementation
      *
-     * @param string $message A text error message
+     * @param string $message A text errors message
      *
      * @return PEAR_Error Instance of PEAR_Error
      */

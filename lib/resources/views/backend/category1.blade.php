@@ -15,15 +15,19 @@
 							Thêm danh mục
 						</div>
 						<div class="panel-body">
+							@include('errors.note')
+							<form method="post">
 							<div class="form-group">
 								<label>Tên danh mục:</label>
     							<input required type="text" name="name" class="form-control" placeholder="Tên danh mục...">
 							</div>
 							<div class="form-group">
-								<input type="submit" name="submit" class="btn-primary btn form-control" value="Thêm mới">
+								<input type="submit" name="submit" class="btn-primary btn form-control" placeholder="Tên danh mục..." value="Thêm mới">
 							</div>
+								{{csrf_field()}}
+							</form>
 						</div>
-						{{csrf_field()}}
+
 					</div>
 			</div>
 			<div class="col-xs-12 col-md-7 col-lg-7">

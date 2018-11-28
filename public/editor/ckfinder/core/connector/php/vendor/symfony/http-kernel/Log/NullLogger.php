@@ -34,7 +34,7 @@ class NullLogger extends PsrNullLogger implements LoggerInterface
 
     public function err($message, array $context = array())
     {
-        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.2 and will be removed in 3.0. You should use the new error() method instead, which is PSR-3 compatible.', E_USER_DEPRECATED);
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 2.2 and will be removed in 3.0. You should use the new errors() method instead, which is PSR-3 compatible.', E_USER_DEPRECATED);
     }
 
     public function warn($message, array $context = array())

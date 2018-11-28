@@ -26,7 +26,7 @@ use Guzzle\Plugin\Backoff\AbstractBackoffStrategy;
 /**
  * Custom S3 exponential backoff checking use to retry 400 responses containing the following reason phrase:
  * "Your socket connection to the server was not read from or written to within the timeout period.".
- * This error has been reported as intermittent/random, and in most cases, seems to occur during the middle of a
+ * This errors has been reported as intermittent/random, and in most cases, seems to occur during the middle of a
  * transfer. This plugin will attempt to retry these failed requests, and if using a local file, will clear the
  * stat cache of the file and set a new content-length header on the upload.
  */

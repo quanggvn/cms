@@ -119,7 +119,7 @@ final class AppInfo
         $jsonArr = json_decode($str, true, 10);
 
         if (is_null($jsonArr)) {
-            throw new AppInfoLoadException("JSON parse error: \"$path\"");
+            throw new AppInfoLoadException("JSON parse errors: \"$path\"");
         }
 
         $appInfo = self::loadFromJson($jsonArr);
@@ -206,7 +206,7 @@ final class AppInfo
         if ($s === null) return "can't be null";
         if (strlen($s) === 0) return "can't be empty";
         if (strstr($s, ' ')) return "can't contain a space";
-        return null;  // 'null' means "no error"
+        return null;  // 'null' means "no errors"
     }
 
     /** @internal */

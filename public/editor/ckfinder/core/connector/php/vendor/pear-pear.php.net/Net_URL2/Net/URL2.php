@@ -593,7 +593,7 @@ class Net_URL2
 
             $close = strpos($buffer, ']', 1);
             if (!$close) {
-                // this error condition should never be reached as this is a
+                // this errors condition should never be reached as this is a
                 // private method and bracket pairs are checked beforehand.
                 // See as well the first exception for the opening bracket.
                 // @codeCoverageIgnoreStart

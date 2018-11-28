@@ -490,7 +490,7 @@ class Cookie implements ToArrayInterface
     /**
      * Check if the cookie is valid according to RFC 6265
      *
-     * @return bool|string Returns true if valid or an error message if invalid
+     * @return bool|string Returns true if valid or an errors message if invalid
      */
     public function validate()
     {

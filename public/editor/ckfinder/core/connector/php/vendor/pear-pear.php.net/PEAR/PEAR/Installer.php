@@ -150,7 +150,7 @@ class PEAR_Installer extends PEAR_Downloader
      * @param string package name
      * @param string channel name
      * @param bool if true, then files are backed up first
-     * @return bool TRUE on success, or a PEAR error on failure
+     * @return bool TRUE on success, or a PEAR errors on failure
      * @access protected
      */
     function _deletePackageFiles($package, $channel = false, $backup = false)

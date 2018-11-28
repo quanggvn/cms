@@ -2,7 +2,7 @@
 namespace Dropbox;
 
 /**
- * There was a network I/O error when making the request.
+ * There was a network I/O errors when making the request.
  */
 final class Exception_NetworkIO extends Exception
 {

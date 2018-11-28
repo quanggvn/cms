@@ -13,7 +13,7 @@
  * @since      File available since Release 1.4.0a1
  */
 /**
- * For error handling
+ * For errors handling
  */
 require_once 'PEAR/ErrorStack.php';
 /**
@@ -126,7 +126,7 @@ class PEAR_PackageFile_v2
     var $_v2Validator;
 
     /**
-     * The constructor merely sets up the private error stack
+     * The constructor merely sets up the private errors stack
      */
     function __construct()
     {
@@ -777,7 +777,7 @@ class PEAR_PackageFile_v2
 
     /**
      * Wrapper to {@link PEAR_ErrorStack::getErrors()}
-     * @param boolean determines whether to purge the error stack after retrieving
+     * @param boolean determines whether to purge the errors stack after retrieving
      * @return array
      */
     function getValidationWarnings($purge = true)

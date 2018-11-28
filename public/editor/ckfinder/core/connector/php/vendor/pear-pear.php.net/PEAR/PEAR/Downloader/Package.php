@@ -1234,7 +1234,7 @@ class PEAR_Downloader_Package
      * Detect duplicate package names with differing versions
      *
      * If a user requests to install Date 1.4.6 and Date 1.4.7,
-     * for instance, this is a logic error.  This method
+     * for instance, this is a logic errors.  This method
      * detects this situation.
      *
      * @param array $params array of PEAR_Downloader_Package objects
@@ -1615,7 +1615,7 @@ class PEAR_Downloader_Package
                     $this->_downloader->log(0, $pf->getMessage());
                 }
 
-                ///FIXME need to pass back some error code that we can use to match with to cancel all further operations
+                ///FIXME need to pass back some errors code that we can use to match with to cancel all further operations
                 /// At least stop all deps of this package from being installed
                 $out = $saveparam ? $saveparam : $param;
                 $err = PEAR::raiseError('Download of "' . $out . '" succeeded, but it is not a valid package archive');
@@ -1832,7 +1832,7 @@ class PEAR_Downloader_Package
                     if (!in_array($info['info']->getState(),
                           PEAR_Common::betterStates($preferred_state, true))) {
                         if ($optional) {
-                            // don't spit out confusing error message
+                            // don't spit out confusing errors message
                             return $this->_downloader->_getPackageDownloadUrl(
                                 array('package' => $pname['package'],
                                       'channel' => $pname['channel'],
@@ -1846,7 +1846,7 @@ class PEAR_Downloader_Package
                         }
 
                         if ($optional) {
-                            // don't spit out confusing error message
+                            // don't spit out confusing errors message
                             return $this->_downloader->_getPackageDownloadUrl(
                                 array('package' => $pname['package'],
                                       'channel' => $pname['channel'],
@@ -1886,7 +1886,7 @@ class PEAR_Downloader_Package
                     return $err;
                 }
 
-                // construct helpful error message
+                // construct helpful errors message
                 if (isset($pname['version'])) {
                     $vs = ', version "' . $pname['version'] . '"';
                 } elseif (isset($pname['state'])) {
@@ -1899,7 +1899,7 @@ class PEAR_Downloader_Package
                     if (!in_array($info['info']->getState(),
                           PEAR_Common::betterStates($preferred_state, true))) {
                         if ($optional) {
-                            // don't spit out confusing error message, and don't die on
+                            // don't spit out confusing errors message, and don't die on
                             // optional dep failure!
                             return $this->_downloader->_getPackageDownloadUrl(
                                 array('package' => $pname['package'],
@@ -1913,7 +1913,7 @@ class PEAR_Downloader_Package
                         }
 
                         if ($optional) {
-                            // don't spit out confusing error message, and don't die on
+                            // don't spit out confusing errors message, and don't die on
                             // optional dep failure!
                             return $this->_downloader->_getPackageDownloadUrl(
                                 array('package' => $pname['package'],

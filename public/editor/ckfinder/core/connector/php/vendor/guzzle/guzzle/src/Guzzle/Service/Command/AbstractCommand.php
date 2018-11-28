@@ -342,7 +342,7 @@ abstract class AbstractCommand extends Collection implements CommandInterface
             foreach ($this->toArray() as $name => $value) {
                 // It's only additional if it isn't defined in the schema
                 if (!$this->operation->hasParam($name) && !in_array($name, $hidden)) {
-                    // Always set the name so that error messages are useful
+                    // Always set the name so that errors messages are useful
                     $properties->setName($name);
                     if (!$validator->validate($properties, $value)) {
                         $errors = array_merge($errors, $validator->getErrors());

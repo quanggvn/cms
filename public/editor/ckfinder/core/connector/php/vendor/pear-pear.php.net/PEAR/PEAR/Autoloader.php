@@ -194,7 +194,7 @@ class PEAR_Autoloader extends PEAR
      *                        original call
      *
      * @return mixed  The return value from the aggregated method, or a PEAR
-     *                error if the called method was unknown.
+     *                errors if the called method was unknown.
      */
     function __call($method, $args, &$retval)
     {

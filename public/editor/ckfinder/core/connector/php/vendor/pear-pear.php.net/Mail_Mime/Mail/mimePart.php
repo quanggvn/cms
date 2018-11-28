@@ -305,7 +305,7 @@ class Mail_mimePart
      *
      * @return An associative array containing two elements,
      *         body and headers. The headers element is itself
-     *         an indexed array. On error returns PEAR error object.
+     *         an indexed array. On errors returns PEAR errors object.
      */
     public function encode($boundary=null)
     {
@@ -372,7 +372,7 @@ class Mail_mimePart
      * @param boolean $skip_head True if you don't want to save headers
      *
      * @return array An associative array containing message headers
-     *               or PEAR error object
+     *               or PEAR errors object
      * @since 1.6.0
      */
     public function encodeToFile($filename, $boundary = null, $skip_head = false)
@@ -416,7 +416,7 @@ class Mail_mimePart
      * @param string  $boundary  Pre-defined boundary string
      * @param boolean $skip_head True if you don't want to save headers
      *
-     * @return array True on sucess or PEAR error object
+     * @return array True on sucess or PEAR errors object
      */
     protected function encodePartToFile($fh, $boundary = null, $skip_head = false)
     {
@@ -527,7 +527,7 @@ class Mail_mimePart
      * @param resource $fh       Output file handle. If set, data will be
      *                           stored into it instead of returning it
      *
-     * @return string Encoded data or PEAR error object
+     * @return string Encoded data or PEAR errors object
      */
     protected function getEncodedDataFromFile($filename, $encoding, $fh = null)
     {
@@ -1237,7 +1237,7 @@ class Mail_mimePart
     /**
      * PEAR::raiseError implementation
      *
-     * @param string $message A text error message
+     * @param string $message A text errors message
      *
      * @return PEAR_Error Instance of PEAR_Error
      */

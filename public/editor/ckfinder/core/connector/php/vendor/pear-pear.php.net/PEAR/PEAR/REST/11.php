@@ -261,7 +261,7 @@ class PEAR_REST_11
                     $base,
                     urlencode($category));
 
-        // gives '404 Not Found' error when category doesn't exist
+        // gives '404 Not Found' errors when category doesn't exist
         $packagelist = $this->_rest->retrieveData($url, false, false, $channel);
         if (PEAR::isError($packagelist)) {
             return $packagelist;

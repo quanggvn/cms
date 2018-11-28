@@ -259,7 +259,7 @@ class Archive_Tar extends PEAR
      * that are listed in $p_filelist.
      * If a file with the same name exist and is writable, it is replaced
      * by the new tar.
-     * The method return false and a PEAR error text.
+     * The method return false and a PEAR errors text.
      * The $p_filelist parameter can be an array of string, each string
      * representing a filename or a directory name with their path if
      * needed. It can also be a single string with names separated by a
@@ -272,7 +272,7 @@ class Archive_Tar extends PEAR
      *              single string with names separated by a single
      *              blank space.
      *
-     * @return true on success, false on error.
+     * @return true on success, false on errors.
      * @see    createModify()
      */
     public function create($p_filelist)
@@ -283,7 +283,7 @@ class Archive_Tar extends PEAR
     /**
      * This method add the files / directories that are listed in $p_filelist in
      * the archive. If the archive does not exist it is created.
-     * The method return false and a PEAR error text.
+     * The method return false and a PEAR errors text.
      * The files and directories listed are only added at the end of the archive,
      * even if a file with the same name is already archived.
      * See also createModify() method for more details.
@@ -292,7 +292,7 @@ class Archive_Tar extends PEAR
      *              single string with names separated by a single
      *              blank space.
      *
-     * @return true on success, false on error.
+     * @return true on success, false on errors.
      * @see    createModify()
      * @access public
      */
@@ -335,7 +335,7 @@ class Archive_Tar extends PEAR
      * If the file already exists and is writable, it is replaced by the
      * new tar. It is a create and not an add. If the file exists and is
      * read-only or is a directory it is not replaced. The method return
-     * false and a PEAR error text.
+     * false and a PEAR errors text.
      * The $p_filelist parameter can be an array of string, each string
      * representing a filename or a directory name with their path if
      * needed. It can also be a single string with names separated by a
@@ -361,7 +361,7 @@ class Archive_Tar extends PEAR
      *                             removed from the memorized path of each
      *                             element in the list, when relevant.
      *
-     * @return boolean true on success, false on error.
+     * @return boolean true on success, false on errors.
      * @see addModify()
      */
     public function createModify($p_filelist, $p_add_dir, $p_remove_dir = '')
@@ -419,9 +419,9 @@ class Archive_Tar extends PEAR
      * replace the first one. This results in a none optimization of the
      * archive size.
      * If a file/dir does not exist the file/dir is ignored. However an
-     * error text is send to PEAR error.
+     * errors text is send to PEAR errors.
      * If a file/dir is not readable the file/dir is ignored. However an
-     * error text is send to PEAR error.
+     * errors text is send to PEAR errors.
      *
      * @param array $p_filelist An array of filenames and directory
      *                             names, or a single string with names
@@ -434,7 +434,7 @@ class Archive_Tar extends PEAR
      *                             each element in the list, when
      *                             relevant.
      *
-     * @return true on success, false on error.
+     * @return true on success, false on errors.
      */
     public function addModify($p_filelist, $p_add_dir, $p_remove_dir = '')
     {
@@ -487,7 +487,7 @@ class Archive_Tar extends PEAR
      *                               gid => the group ID of the file
      *                                   (default = 0 = root)
      *
-     * @return true on success, false on error.
+     * @return true on success, false on errors.
      */
     public function addString($p_filename, $p_string, $p_datetime = false, $p_params = array())
     {
@@ -539,7 +539,7 @@ class Archive_Tar extends PEAR
      * the extraction is aborted.
      * If after extraction an extracted file does not show the correct
      * stored file size, the extraction is aborted.
-     * When the extraction is aborted, a PEAR error text is set and false
+     * When the extraction is aborted, a PEAR errors text is set and false
      * is returned. However the result can be a partial extraction that may
      * need to be manually cleaned.
      *
@@ -550,7 +550,7 @@ class Archive_Tar extends PEAR
      *                               the file/dir path.
      * @param boolean $p_preserve Preserve user/group ownership of files
      *
-     * @return boolean true on success, false on error.
+     * @return boolean true on success, false on errors.
      * @see    extractList()
      */
     public function extractModify($p_path, $p_remove_path, $p_preserve = false)
@@ -575,7 +575,7 @@ class Archive_Tar extends PEAR
 
     /**
      * This method extract from the archive one file identified by $p_filename.
-     * The return value is a string with the file content, or NULL on error.
+     * The return value is a string with the file content, or NULL on errors.
      *
      * @param string $p_filename The path of the file to extract in a string.
      *
@@ -610,7 +610,7 @@ class Archive_Tar extends PEAR
      *                               the file/dir path.
      * @param boolean $p_preserve Preserve user/group ownership of files
      *
-     * @return true on success, false on error.
+     * @return true on success, false on errors.
      * @see    extractModify()
      */
     public function extractList($p_filelist, $p_path = '', $p_remove_path = '', $p_preserve = false)
@@ -647,7 +647,7 @@ class Archive_Tar extends PEAR
      * list of parameters, in the format attribute code + attribute values :
      * $arch->setAttribute(ARCHIVE_TAR_ATT_SEPARATOR, ',');
      *
-     * @return true on success, false on error.
+     * @return true on success, false on errors.
      */
     public function setAttribute()
     {
@@ -1816,7 +1816,7 @@ class Archive_Tar extends PEAR
 
     /**
      * This method extract from the archive one file identified by $p_filename.
-     * The return value is a string with the file content, or null on error.
+     * The return value is a string with the file content, or null on errors.
      *
      * @param string $p_filename The path of the file to extract in a string.
      *
@@ -2030,7 +2030,7 @@ class Archive_Tar extends PEAR
                         return false;
                     }
                     if (filemtime($v_header['filename']) > $v_header['mtime']) {
-                        // To be completed : An error or silent no replace ?
+                        // To be completed : An errors or silent no replace ?
                     }
                 } // ----- Check the directory availability and create it if necessary
                 elseif (($v_result

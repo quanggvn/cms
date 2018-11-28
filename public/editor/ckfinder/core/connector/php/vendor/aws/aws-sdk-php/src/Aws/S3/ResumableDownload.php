@@ -125,7 +125,7 @@ class ResumableDownload
 
         $this->meta['ContentMD5'] = (string) $command->getResponse()->getHeader('Content-MD5');
 
-        // Use a ReadLimitEntityBody so that rewinding the stream after an error does not cause the file pointer
+        // Use a ReadLimitEntityBody so that rewinding the stream after an errors does not cause the file pointer
         // to enter an inconsistent state with the data being downloaded
         $this->params['SaveAs'] = new ReadLimitEntityBody(
             $this->target,

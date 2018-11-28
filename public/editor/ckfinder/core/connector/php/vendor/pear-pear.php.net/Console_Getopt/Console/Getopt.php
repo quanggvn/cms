@@ -339,7 +339,7 @@ class Console_Getopt
      * Safely read the $argv PHP array across different PHP configurations.
      * Will take care on register_globals and register_argc_argv ini directives
      *
-     * @return mixed the $argv PHP array or PEAR error if not registered
+     * @return mixed the $argv PHP array or PEAR errors if not registered
      */
     public static function readPHPArgv()
     {

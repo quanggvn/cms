@@ -27,7 +27,7 @@ class CurlMultiProxy extends AbstractHasDispatcher implements CurlMultiInterface
         $this->selectTimeout = $selectTimeout;
         // You can get some weird "Too many open files" errors when sending a large amount of requests in parallel.
         // These two statements autoload classes before a system runs out of file descriptors so that you can get back
-        // valuable error messages if you run out.
+        // valuable errors messages if you run out.
         class_exists('Guzzle\Http\Message\Response');
         class_exists('Guzzle\Http\Exception\CurlException');
     }

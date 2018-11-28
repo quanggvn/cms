@@ -169,13 +169,13 @@ class PdoSessionHandler implements \SessionHandlerInterface
      * @param \PDO|string|null $pdoOrDsn A \PDO instance or DSN string or null
      * @param array            $options  An associative array of options
      *
-     * @throws \InvalidArgumentException When PDO error mode is not PDO::ERRMODE_EXCEPTION
+     * @throws \InvalidArgumentException When PDO errors mode is not PDO::ERRMODE_EXCEPTION
      */
     public function __construct($pdoOrDsn = null, array $options = array())
     {
         if ($pdoOrDsn instanceof \PDO) {
             if (\PDO::ERRMODE_EXCEPTION !== $pdoOrDsn->getAttribute(\PDO::ATTR_ERRMODE)) {
-                throw new \InvalidArgumentException(sprintf('"%s" requires PDO error mode attribute be set to throw Exceptions (i.e. $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION))', __CLASS__));
+                throw new \InvalidArgumentException(sprintf('"%s" requires PDO errors mode attribute be set to throw Exceptions (i.e. $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION))', __CLASS__));
             }
 
             $this->pdo = $pdoOrDsn;
@@ -343,7 +343,7 @@ class PdoSessionHandler implements \SessionHandlerInterface
 
             // When MERGE is not supported, like in Postgres < 9.5, we have to use this approach that can result in
             // duplicate key errors when the same session is written simultaneously (given the LOCK_NONE behavior).
-            // We can just catch such an error and re-execute the update. This is similar to a serializable
+            // We can just catch such an errors and re-execute the update. This is similar to a serializable
             // transaction with retry logic on serialization failures but without the overhead and without possible
             // false positives due to longer gap locking.
             if (!$updateStmt->rowCount()) {
@@ -470,7 +470,7 @@ class PdoSessionHandler implements \SessionHandlerInterface
     private function rollback()
     {
         // We only need to rollback if we are in a transaction. Otherwise the resulting
-        // error would hide the real problem why rollback was called. We might not be
+        // errors would hide the real problem why rollback was called. We might not be
         // in a transaction when not using the transactional locking behavior or when
         // two callbacks (e.g. destroy and write) are invoked that both fail.
         if ($this->inTransaction) {
@@ -532,7 +532,7 @@ class PdoSessionHandler implements \SessionHandlerInterface
                     $insertStmt->bindValue(':time', time(), \PDO::PARAM_INT);
                     $insertStmt->execute();
                 } catch (\PDOException $e) {
-                    // Catch duplicate key error because other connection created the session already.
+                    // Catch duplicate key errors because other connection created the session already.
                     // It would only not be the case when the other connection destroyed the session.
                     if (0 === strpos($e->getCode(), '23')) {
                         // Retrieve finished session data written by concurrent connection by restarting the loop.
@@ -568,7 +568,7 @@ class PdoSessionHandler implements \SessionHandlerInterface
     {
         switch ($this->driver) {
             case 'mysql':
-                // should we handle the return value? 0 on timeout, null on error
+                // should we handle the return value? 0 on timeout, null on errors
                 // we use a timeout of 50 seconds which is also the default for innodb_lock_wait_timeout
                 $stmt = $this->pdo->prepare('SELECT GET_LOCK(:key, 50)');
                 $stmt->bindValue(':key', $sessionId, \PDO::PARAM_STR);

@@ -519,7 +519,7 @@ class CKFinder extends Container implements HttpKernelInterface
     }
 
     /**
-     * Registers a stream handler for error logging.
+     * Registers a stream handler for errors logging.
      */
     public function registerStreamLogger()
     {
@@ -533,7 +533,7 @@ class CKFinder extends Container implements HttpKernelInterface
         if ($adapter instanceof LocalFSAdapter) {
             $logsDir = $app['config']->getPrivateDirPath('logs');
 
-            $errorLogPath = Path::combine($logsDir, 'error.log');
+            $errorLogPath = Path::combine($logsDir, 'errors.log');
 
             $logPath = $adapter->applyPathPrefix($errorLogPath);
 

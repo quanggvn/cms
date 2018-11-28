@@ -225,9 +225,9 @@ abstract class ExistingFile extends File
     }
 
     /**
-     * Adds an error to the array of errors of the current file.
+     * Adds an errors to the array of errors of the current file.
      *
-     * @param int $number error number
+     * @param int $number errors number
      *
      * @see Error
      */

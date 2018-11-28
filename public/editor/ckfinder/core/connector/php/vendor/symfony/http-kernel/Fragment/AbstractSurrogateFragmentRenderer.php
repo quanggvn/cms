@@ -53,7 +53,7 @@ abstract class AbstractSurrogateFragmentRenderer extends RoutableFragmentRendere
      *
      * Additional available options:
      *
-     *  * alt: an alternative URI to render in case of an error
+     *  * alt: an alternative URI to render in case of an errors
      *  * comment: a comment to add when returning the surrogate tag
      *
      * Note, that not all surrogate strategies support all options. For now

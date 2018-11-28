@@ -77,7 +77,7 @@ class RefreshableInstanceProfileCredentials extends AbstractRefreshableCredentia
     /**
      * Attempt to get new credentials from the instance profile
      *
-     * @throws InstanceProfileCredentialsException On error
+     * @throws InstanceProfileCredentialsException On errors
      */
     protected function refresh()
     {

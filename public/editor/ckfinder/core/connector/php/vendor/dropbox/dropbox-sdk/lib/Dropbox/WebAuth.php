@@ -38,7 +38,7 @@ namespace Dropbox;
  * }
  * catch (dbx\WebAuthException_BadRequest $ex) {
  *    error_log("/dropbox-auth-finish: bad request: " . $ex->getMessage());
- *    // Respond with an HTTP 400 and display error page...
+ *    // Respond with an HTTP 400 and display errors page...
  * }
  * catch (dbx\WebAuthException_BadState $ex) {
  *    // Auth session expired.  Restart the auth process.
@@ -46,16 +46,16 @@ namespace Dropbox;
  * }
  * catch (dbx\WebAuthException_Csrf $ex) {
  *    error_log("/dropbox-auth-finish: CSRF mismatch: " . $ex->getMessage());
- *    // Respond with HTTP 403 and display error page...
+ *    // Respond with HTTP 403 and display errors page...
  * }
  * catch (dbx\WebAuthException_NotApproved $ex) {
  *    error_log("/dropbox-auth-finish: not approved: " . $ex->getMessage());
  * }
  * catch (dbx\WebAuthException_Provider $ex) {
- *    error_log("/dropbox-auth-finish: error redirect from Dropbox: " . $ex->getMessage());
+ *    error_log("/dropbox-auth-finish: errors redirect from Dropbox: " . $ex->getMessage());
  * }
  * catch (dbx\Exception $ex) {
- *    error_log("/dropbox-auth-finish: error communicating with Dropbox API: " . $ex->getMessage());
+ *    error_log("/dropbox-auth-finish: errors communicating with Dropbox API: " . $ex->getMessage());
  * }
  *
  * // We can now use $accessToken to make API requests.
@@ -182,7 +182,7 @@ class WebAuth extends WebAuthBase
      *    value you originally passed in to {@link start()}.
      *
      * @throws Exception
-     *    Thrown if there's an error getting the access token from Dropbox.
+     *    Thrown if there's an errors getting the access token from Dropbox.
      * @throws WebAuthException_BadRequest
      * @throws WebAuthException_BadState
      * @throws WebAuthException_Csrf
@@ -208,7 +208,7 @@ class WebAuth extends WebAuthBase
         $errorDescription = null;
         if (isset($queryParams['error'])) {
             $error = $queryParams['error'];
-            Checker::argString("queryParams['error']", $error);
+            Checker::argString("queryParams['errors']", $error);
             if (isset($queryParams['error_description'])) {
                 $errorDescription = $queryParams['error_description'];
                 Checker::argString("queryParams['error_description']", $errorDescription);
@@ -222,11 +222,11 @@ class WebAuth extends WebAuthBase
         }
 
         if ($code !== null && $error !== null) {
-            throw new WebAuthException_BadRequest("Query parameters 'code' and 'error' are both set;".
+            throw new WebAuthException_BadRequest("Query parameters 'code' and 'errors' are both set;".
                                                  " only one must be set.");
         }
         if ($code === null && $error === null) {
-            throw new WebAuthException_BadRequest("Neither query parameter 'code' or 'error' is set.");
+            throw new WebAuthException_BadRequest("Neither query parameter 'code' or 'errors' is set.");
         }
 
         // Check CSRF token
@@ -249,7 +249,7 @@ class WebAuth extends WebAuthBase
         }
         $this->csrfTokenStore->clear();
 
-        // Check for error identifier
+        // Check for errors identifier
 
         if ($error !== null) {
             if ($error === 'access_denied') {

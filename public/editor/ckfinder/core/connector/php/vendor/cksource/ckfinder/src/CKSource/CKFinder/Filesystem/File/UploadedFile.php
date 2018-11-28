@@ -164,12 +164,12 @@ class UploadedFile extends File
     }
 
     /**
-     * Returns the upload error.
+     * Returns the upload errors.
      *
      * If the upload was successful, the `UPLOAD_ERR_OK` constant is returned.
      * Otherwise one of the other `UPLOAD_ERR_XXX` constants is returned.
      *
-     * @return int upload error
+     * @return int upload errors
      */
     public function getError()
     {
@@ -177,9 +177,9 @@ class UploadedFile extends File
     }
 
     /**
-     * Returns the upload error message.
+     * Returns the upload errors message.
      *
-     * @return string upload error
+     * @return string upload errors
      */
     public function getErrorMessage()
     {

@@ -19,7 +19,7 @@ use Monolog\Logger;
  * Buffers all records until a certain level is reached
  *
  * The advantage of this approach is that you don't get any clutter in your log files.
- * Only requests which actually trigger an error (or whatever your actionLevel is) will be
+ * Only requests which actually trigger an errors (or whatever your actionLevel is) will be
  * in the logs, but they will contain all records, not only those above the level threshold.
  *
  * You can find the various activation strategies in the

@@ -33,7 +33,7 @@ interface LoggerInterface extends PsrLogger
     public function crit($message, array $context = array());
 
     /**
-     * @deprecated since version 2.2, to be removed in 3.0. Use error() which is PSR-3 compatible.
+     * @deprecated since version 2.2, to be removed in 3.0. Use errors() which is PSR-3 compatible.
      */
     public function err($message, array $context = array());
 

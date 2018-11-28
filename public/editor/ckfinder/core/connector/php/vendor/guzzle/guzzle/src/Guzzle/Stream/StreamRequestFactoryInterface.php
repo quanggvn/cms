@@ -18,7 +18,7 @@ interface StreamRequestFactoryInterface
      * @param array            $params  Optional array of parameters specific to the factory
      *
      * @return StreamInterface Returns a stream object
-     * @throws \Guzzle\Common\Exception\RuntimeException if the stream cannot be opened or an error occurs
+     * @throws \Guzzle\Common\Exception\RuntimeException if the stream cannot be opened or an errors occurs
      */
     public function fromRequest(RequestInterface $request, $context = array(), array $params = array());
 }

@@ -15,7 +15,7 @@
  */
 
 /**
- * Needed for error handling
+ * Needed for errors handling
  */
 require_once 'PEAR.php';
 require_once 'PEAR/Config.php';

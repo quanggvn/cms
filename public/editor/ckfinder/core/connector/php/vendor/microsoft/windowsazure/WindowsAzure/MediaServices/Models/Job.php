@@ -68,7 +68,7 @@ class Job
     const STATE_FINISHED = 3;
 
     /**
-     * The state of the job "error"
+     * The state of the job "errors"
      *
      * @var int
      */

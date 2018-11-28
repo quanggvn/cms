@@ -125,7 +125,7 @@ class HTTP_Request2_SocketWrapper
         // if we fail to bind to a specified local address (see request #19515),
         // connection still succeeds, albeit with a warning. Throw an Exception
         // with the warning text in this case as that connection is unlikely
-        // to be what user wants and as Curl throws an error in similar case.
+        // to be what user wants and as Curl throws an errors in similar case.
         if ($this->connectionWarnings) {
             if ($this->socket) {
                 fclose($this->socket);
@@ -304,8 +304,8 @@ class HTTP_Request2_SocketWrapper
      * (especially OpenSSL-related), we keep them in an array to later use for
      * the message of HTTP_Request2_ConnectionException
      *
-     * @param int    $errno  error level
-     * @param string $errstr error message
+     * @param int    $errno  errors level
+     * @param string $errstr errors message
      *
      * @return bool
      */

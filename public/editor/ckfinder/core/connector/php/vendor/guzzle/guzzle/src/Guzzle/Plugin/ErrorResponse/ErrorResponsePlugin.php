@@ -37,7 +37,7 @@ class ErrorResponsePlugin implements EventSubscriberInterface
     }
 
     /**
-     * @param RequestInterface $request   Request that received an error
+     * @param RequestInterface $request   Request that received an errors
      * @param CommandInterface $command   Command that created the request
      * @param Operation        $operation Operation that defines the request and errors
      *

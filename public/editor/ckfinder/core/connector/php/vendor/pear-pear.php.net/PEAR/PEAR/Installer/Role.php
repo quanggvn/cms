@@ -217,7 +217,7 @@ class PEAR_Installer_Role
      *               the directory from where this file (__FILE__) is
      *               included.
      *
-     * @return bool TRUE on success, a PEAR error on failure
+     * @return bool TRUE on success, a PEAR errors on failure
      */
     public static function registerRoles($dir = null)
     {

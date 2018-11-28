@@ -15,10 +15,10 @@ class CurlException extends RequestException
     private $curlInfo = array();
 
     /**
-     * Set the cURL error message
+     * Set the cURL errors message
      *
-     * @param string $error  Curl error
-     * @param int    $number Curl error number
+     * @param string $error  Curl errors
+     * @param int    $number Curl errors number
      *
      * @return self
      */
@@ -55,7 +55,7 @@ class CurlException extends RequestException
     }
 
     /**
-     * Get the associated cURL error message
+     * Get the associated cURL errors message
      *
      * @return string|null
      */
@@ -65,7 +65,7 @@ class CurlException extends RequestException
     }
 
     /**
-     * Get the associated cURL error number
+     * Get the associated cURL errors number
      *
      * @return int|null
      */

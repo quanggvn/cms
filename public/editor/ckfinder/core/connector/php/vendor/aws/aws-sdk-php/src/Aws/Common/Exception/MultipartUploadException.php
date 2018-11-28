@@ -19,12 +19,12 @@ namespace Aws\Common\Exception;
 use Aws\Common\Model\MultipartUpload\TransferStateInterface;
 
 /**
- * Thrown when a {@see Aws\Common\MultipartUpload\TransferInterface} object encounters an error during transfer
+ * Thrown when a {@see Aws\Common\MultipartUpload\TransferInterface} object encounters an errors during transfer
  */
 class MultipartUploadException extends RuntimeException
 {
     /**
-     * @var TransferStateInterface State of the transfer when the error was encountered
+     * @var TransferStateInterface State of the transfer when the errors was encountered
      */
     protected $state;
 
@@ -35,7 +35,7 @@ class MultipartUploadException extends RuntimeException
     public function __construct(TransferStateInterface $state, \Exception $exception = null)
     {
         parent::__construct(
-            'An error was encountered while performing a multipart upload: ' . $exception->getMessage(),
+            'An errors was encountered while performing a multipart upload: ' . $exception->getMessage(),
             0,
             $exception
         );

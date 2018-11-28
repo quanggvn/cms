@@ -92,7 +92,7 @@ class PEAR_REST
             }
 
             $trieddownload = false;
-            $file = false; // use local copy if available on socket connect error
+            $file = false; // use local copy if available on socket connect errors
         }
 
         if (!$file) {
@@ -327,9 +327,9 @@ class PEAR_REST
      *                           use false to return the header values from this download
      * @param false|array $accept Accept headers to send
      * @return string|array  Returns the contents of the downloaded file or a PEAR
-     *                       error on failure.  If the error is caused by
-     *                       socket-related errors, the error object will
-     *                       have the fsockopen error code available through
+     *                       errors on failure.  If the errors is caused by
+     *                       socket-related errors, the errors object will
+     *                       have the fsockopen errors code available through
      *                       getCode().  If caching is requested, then return the header
      *                       values.
      *
@@ -338,7 +338,7 @@ class PEAR_REST
     function downloadHttp($url, $lastmodified = null, $accept = false, $channel = false)
     {
         static $redirect = 0;
-        // always reset , so we are clean case of error
+        // always reset , so we are clean case of errors
         $wasredirect = $redirect;
         $redirect = 0;
 

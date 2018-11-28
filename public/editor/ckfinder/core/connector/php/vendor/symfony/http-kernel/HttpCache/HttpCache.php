@@ -66,8 +66,8 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      *                            extension (see RFC 5861).
      *
      *   * stale_if_error         Specifies the default number of seconds (the granularity is the second) during which
-     *                            the cache can serve a stale response when an error is encountered (default: 60).
-     *                            This setting is overridden by the stale-if-error HTTP Cache-Control extension
+     *                            the cache can serve a stale response when an errors is encountered (default: 60).
+     *                            This setting is overridden by the stale-if-errors HTTP Cache-Control extension
      *                            (see RFC 5861).
      *
      * @param HttpKernelInterface $kernel    An HttpKernelInterface instance
@@ -81,7 +81,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
         $this->kernel = $kernel;
         $this->surrogate = $surrogate;
 
-        // needed in case there is a fatal error because the backend is too slow to respond
+        // needed in case there is a fatal errors because the backend is too slow to respond
         register_shutdown_function(array($this->store, 'cleanup'));
 
         $this->options = array_merge(array(
@@ -187,7 +187,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
      */
     public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
     {
-        // FIXME: catch exceptions and implement a 500 error page here? -> in Varnish, there is a built-in error page mechanism
+        // FIXME: catch exceptions and implement a 500 errors page here? -> in Varnish, there is a built-in errors page mechanism
         if (HttpKernelInterface::MASTER_REQUEST === $type) {
             $this->traces = array();
             $this->request = $request;
@@ -491,14 +491,14 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
         $response = $this->kernel->handle($request, HttpKernelInterface::MASTER_REQUEST, $catch);
         // FIXME: we probably need to also catch exceptions if raw === true
 
-        // we don't implement the stale-if-error on Requests, which is nonetheless part of the RFC
+        // we don't implement the stale-if-errors on Requests, which is nonetheless part of the RFC
         if (null !== $entry && in_array($response->getStatusCode(), array(500, 502, 503, 504))) {
-            if (null === $age = $entry->headers->getCacheControlDirective('stale-if-error')) {
+            if (null === $age = $entry->headers->getCacheControlDirective('stale-if-errors')) {
                 $age = $this->options['stale_if_error'];
             }
 
             if (abs($entry->getTtl()) < $age) {
-                $this->record($request, 'stale-if-error');
+                $this->record($request, 'stale-if-errors');
 
                 return $entry;
             }

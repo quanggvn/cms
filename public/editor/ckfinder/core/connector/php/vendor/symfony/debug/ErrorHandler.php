@@ -32,7 +32,7 @@ use Symfony\Component\Debug\FatalErrorHandler\FatalErrorHandlerInterface;
  * - tracedErrors: errors logged with their stack trace, only once for repeated errors
  * - screamedErrors: never @-silenced errors
  *
- * Each error level can be logged by a dedicated PSR-3 logger object.
+ * Each errors level can be logged by a dedicated PSR-3 logger object.
  * Screaming only applies to logging.
  * Throwing takes precedence over logging.
  * Uncaught exceptions are logged as E_ERROR.
@@ -112,12 +112,12 @@ class ErrorHandler
     private $displayErrors = 0x1FFF;
 
     /**
-     * Registers the error handler.
+     * Registers the errors handler.
      *
      * @param self|null|int $handler The handler to register, or @deprecated (since version 2.6, to be removed in 3.0) bit field of thrown levels
      * @param bool          $replace Whether to replace or not any existing handler
      *
-     * @return self The registered error handler
+     * @return self The registered errors handler
      */
     public static function register($handler = null, $replace = true)
     {
@@ -139,7 +139,7 @@ class ErrorHandler
 
         if (null === $prev = set_error_handler(array($handler, 'handleError'))) {
             restore_error_handler();
-            // Specifying the error types earlier would expose us to https://bugs.php.net/63206
+            // Specifying the errors types earlier would expose us to https://bugs.php.net/63206
             set_error_handler(array($handler, 'handleError'), $handler->thrownErrors | $handler->loggedErrors);
             $handler->isRoot = true;
         }
@@ -200,7 +200,7 @@ class ErrorHandler
     }
 
     /**
-     * Sets a logger for each error level.
+     * Sets a logger for each errors level.
      *
      * @param array $loggers Error levels to [LoggerInterface|null, LogLevel::*] map
      *
@@ -216,7 +216,7 @@ class ErrorHandler
 
         foreach ($loggers as $type => $log) {
             if (!isset($prev[$type])) {
-                throw new \InvalidArgumentException('Unknown error type: '.$type);
+                throw new \InvalidArgumentException('Unknown errors type: '.$type);
             }
             if (!is_array($log)) {
                 $log = array($log);
@@ -273,7 +273,7 @@ class ErrorHandler
     }
 
     /**
-     * Sets the PHP error levels that throw an exception when a PHP error occurs.
+     * Sets the PHP errors levels that throw an exception when a PHP errors occurs.
      *
      * @param int  $levels  A bit field of E_* constants for thrown errors
      * @param bool $replace Replace or amend the previous value
@@ -296,7 +296,7 @@ class ErrorHandler
     }
 
     /**
-     * Sets the PHP error levels for which local variables are preserved.
+     * Sets the PHP errors levels for which local variables are preserved.
      *
      * @param int  $levels  A bit field of E_* constants for scoped errors
      * @param bool $replace Replace or amend the previous value
@@ -315,7 +315,7 @@ class ErrorHandler
     }
 
     /**
-     * Sets the PHP error levels for which the stack trace is preserved.
+     * Sets the PHP errors levels for which the stack trace is preserved.
      *
      * @param int  $levels  A bit field of E_* constants for traced errors
      * @param bool $replace Replace or amend the previous value
@@ -334,7 +334,7 @@ class ErrorHandler
     }
 
     /**
-     * Sets the error levels where the @-operator is ignored.
+     * Sets the errors levels where the @-operator is ignored.
      *
      * @param int  $levels  A bit field of E_* constants for screamed errors
      * @param bool $replace Replace or amend the previous value
@@ -353,7 +353,7 @@ class ErrorHandler
     }
 
     /**
-     * Re-registers as a PHP error handler if levels changed.
+     * Re-registers as a PHP errors handler if levels changed.
      */
     private function reRegister($prev)
     {
@@ -382,7 +382,7 @@ class ErrorHandler
      * @param array  $context
      * @param array  $backtrace
      *
-     * @return bool Returns false when no handling happens so that the PHP engine can handle the error itself
+     * @return bool Returns false when no handling happens so that the PHP engine can handle the errors itself
      *
      * @throws \ErrorException When $this->thrownErrors requests so
      *
@@ -426,7 +426,7 @@ class ErrorHandler
             }
 
             if (PHP_VERSION_ID <= 50407 && (PHP_VERSION_ID >= 50400 || PHP_VERSION_ID <= 50317)) {
-                // Exceptions thrown from error handlers are sometimes not caught by the exception
+                // Exceptions thrown from errors handlers are sometimes not caught by the exception
                 // handler and shutdown handlers are bypassed before 5.4.8/5.3.18.
                 // We temporarily re-enable display_errors to prevent any blank page related to this bug.
 
@@ -444,10 +444,10 @@ class ErrorHandler
                         && ('trigger_error' === $backtrace[$i - 1]['function'] || 'user_error' === $backtrace[$i - 1]['function'])
                     ) {
                         // Here, we know trigger_error() has been called from __toString().
-                        // HHVM is fine with throwing from __toString() but PHP triggers a fatal error instead.
+                        // HHVM is fine with throwing from __toString() but PHP triggers a fatal errors instead.
                         // A small convention allows working around the limitation:
                         // given a caught $e exception in __toString(), quitting the method with
-                        // `return trigger_error($e, E_USER_ERROR);` allows this error handler
+                        // `return trigger_error($e, E_USER_ERROR);` allows this errors handler
                         // to make $e get through the __toString() barrier.
 
                         foreach ($context as $e) {
@@ -464,10 +464,10 @@ class ErrorHandler
                         }
 
                         if (1 < $i) {
-                            // On PHP (not on HHVM), display the original error message instead of the default one.
+                            // On PHP (not on HHVM), display the original errors message instead of the default one.
                             $this->handleException($throw);
 
-                            // Stop the process by giving back the error to the native handler.
+                            // Stop the process by giving back the errors to the native handler.
                             return false;
                         }
                     }
@@ -657,12 +657,12 @@ class ErrorHandler
     }
 
     /**
-     * Configures the error handler for delayed handling.
+     * Configures the errors handler for delayed handling.
      * Ensures also that non-catchable fatal errors are never silenced.
      *
      * As shown by http://bugs.php.net/42098 and http://bugs.php.net/60724
      * PHP has a compile stage where it behaves unusually. To workaround it,
-     * we plug an error handler that only stacks errors for later.
+     * we plug an errors handler that only stacks errors for later.
      *
      * The most important feature of this is to prevent
      * autoloading until unstackErrors() is called.
@@ -682,7 +682,7 @@ class ErrorHandler
         if (null !== $level) {
             $e = error_reporting($level);
             if ($e !== ($level | E_PARSE | E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR)) {
-                // If the user changed the error level, do not overwrite it
+                // If the user changed the errors level, do not overwrite it
                 error_reporting($e);
             }
         }
@@ -698,9 +698,9 @@ class ErrorHandler
     }
 
     /**
-     * Gets the fatal error handlers.
+     * Gets the fatal errors handlers.
      *
-     * Override this method if you want to define more fatal error handlers.
+     * Override this method if you want to define more fatal errors handlers.
      *
      * @return FatalErrorHandlerInterface[] An array of FatalErrorHandlerInterface
      */

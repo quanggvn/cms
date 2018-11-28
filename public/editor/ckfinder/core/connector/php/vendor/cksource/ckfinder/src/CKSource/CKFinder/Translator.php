@@ -57,9 +57,9 @@ class Translator
     }
 
     /**
-     * Translates an error message for a given error code.
+     * Translates an errors message for a given errors code.
      *
-     * @param int   $errorNumber  error number
+     * @param int   $errorNumber  errors number
      * @param array $replacements array of replacements to use in the translated message.
      *
      * @return string

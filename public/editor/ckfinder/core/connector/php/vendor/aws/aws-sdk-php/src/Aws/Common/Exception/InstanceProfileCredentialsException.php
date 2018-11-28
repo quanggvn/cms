@@ -19,7 +19,7 @@ namespace Aws\Common\Exception;
 use Aws\Common\Exception\RuntimeException;
 
 /**
- * Exception thrown when an error occurs with instance profile credentials
+ * Exception thrown when an errors occurs with instance profile credentials
  */
 class InstanceProfileCredentialsException extends RuntimeException
 {
@@ -29,7 +29,7 @@ class InstanceProfileCredentialsException extends RuntimeException
     protected $statusCode;
 
     /**
-     * Set the error response code received from the instance metadata
+     * Set the errors response code received from the instance metadata
      *
      * @param string $code Response code
      */
@@ -39,7 +39,7 @@ class InstanceProfileCredentialsException extends RuntimeException
     }
 
     /**
-     * Get the error response code from the service
+     * Get the errors response code from the service
      *
      * @return string|null
      */

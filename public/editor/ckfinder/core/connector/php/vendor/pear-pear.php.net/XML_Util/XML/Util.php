@@ -868,7 +868,7 @@ class XML_Util
      *
      * @param string $string string that should be checked
      *
-     * @return mixed true, if string is a valid XML name, PEAR error otherwise
+     * @return mixed true, if string is a valid XML name, PEAR errors otherwise
      *
      * @todo support for other charsets
      * @todo PEAR CS - unable to avoid 85-char limit on second preg_match
@@ -906,8 +906,8 @@ class XML_Util
      * Avoids the necessity to always require
      * PEAR.php
      *
-     * @param string $msg  error message
-     * @param int    $code error code
+     * @param string $msg  errors message
+     * @param int    $code errors code
      *
      * @return PEAR_Error
      * @todo   PEAR CS - should this use include_once instead?

@@ -177,7 +177,7 @@ interface StreamInterface
     /**
      * Returns the current position of the file read/write pointer
      *
-     * @return int|bool Returns the position of the file pointer or false on error
+     * @return int|bool Returns the position of the file pointer or false on errors
      */
     public function ftell();
 

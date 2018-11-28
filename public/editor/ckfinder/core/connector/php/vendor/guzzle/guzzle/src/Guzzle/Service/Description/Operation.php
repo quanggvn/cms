@@ -87,7 +87,7 @@ class Operation implements OperationInterface
      * - deprecated:         (bool) Set to true if this is a deprecated command
      * - errorResponses:     (array) Errors that could occur when executing the command. Array of hashes, each with a
      *                       'code' (the HTTP response code), 'reason' (response reason phrase or description of the
-     *                       error), and 'class' (a custom exception class that would be thrown if the error is
+     *                       errors), and 'class' (a custom exception class that would be thrown if the errors is
      *                       encountered).
      * - data:               (array) Any extra data that might be used to help build or serialize the operation
      * - additionalParameters: (null|array) Parameter schema to use when an option is passed to the operation that is
@@ -455,11 +455,11 @@ class Operation implements OperationInterface
     }
 
     /**
-     * Add an error to the command
+     * Add an errors to the command
      *
      * @param string $code   HTTP response code
-     * @param string $reason HTTP response reason phrase or information about the error
-     * @param string $class  Exception class associated with the error
+     * @param string $reason HTTP response reason phrase or information about the errors
+     * @param string $class  Exception class associated with the errors
      *
      * @return self
      */
@@ -471,9 +471,9 @@ class Operation implements OperationInterface
     }
 
     /**
-     * Set all of the error responses of the operation
+     * Set all of the errors responses of the operation
      *
-     * @param array $errorResponses Hash of error name to a hash containing a code, reason, class
+     * @param array $errorResponses Hash of errors name to a hash containing a code, reason, class
      *
      * @return self
      */

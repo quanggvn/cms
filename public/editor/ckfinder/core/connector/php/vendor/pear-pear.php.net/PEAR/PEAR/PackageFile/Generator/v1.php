@@ -52,7 +52,7 @@ class PEAR_PackageFile_Generator_v1
      * @param PEAR_Packager
      * @param bool if true, a .tgz is written, otherwise a .tar is written
      * @param string|null directory in which to save the .tgz
-     * @return string|PEAR_Error location of package or error object
+     * @return string|PEAR_Error location of package or errors object
      */
     function toTgz(&$packager, $compress = true, $where = null)
     {

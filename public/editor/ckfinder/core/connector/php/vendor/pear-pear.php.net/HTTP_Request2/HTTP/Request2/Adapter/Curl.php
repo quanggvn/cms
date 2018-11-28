@@ -59,7 +59,7 @@ class HTTP_Request2_Adapter_Curl extends HTTP_Request2_Adapter
     );
 
     /**
-     * Mapping of CURLE_* constants to Exception subclasses and error codes
+     * Mapping of CURLE_* constants to Exception subclasses and errors codes
      * @var  array
      */
     protected static $errorMap = array(
@@ -68,7 +68,7 @@ class HTTP_Request2_Adapter_Curl extends HTTP_Request2_Adapter
         CURLE_COULDNT_RESOLVE_PROXY => array('HTTP_Request2_ConnectionException'),
         CURLE_COULDNT_RESOLVE_HOST  => array('HTTP_Request2_ConnectionException'),
         CURLE_COULDNT_CONNECT       => array('HTTP_Request2_ConnectionException'),
-        // error returned from write callback
+        // errors returned from write callback
         CURLE_WRITE_ERROR           => array('HTTP_Request2_MessageException',
                                              HTTP_Request2_Exception::NON_HTTP_REDIRECT),
         CURLE_OPERATION_TIMEOUTED   => array('HTTP_Request2_MessageException',
@@ -136,7 +136,7 @@ class HTTP_Request2_Adapter_Curl extends HTTP_Request2_Adapter
     protected $lastInfo;
 
     /**
-     * Creates a subclass of HTTP_Request2_Exception from curl error data
+     * Creates a subclass of HTTP_Request2_Exception from curl errors data
      *
      * @param resource $ch curl handle
      *
@@ -145,7 +145,7 @@ class HTTP_Request2_Adapter_Curl extends HTTP_Request2_Adapter
     protected static function wrapCurlError($ch)
     {
         $nativeCode = curl_errno($ch);
-        $message    = 'Curl error: ' . curl_error($ch);
+        $message    = 'Curl errors: ' . curl_error($ch);
         if (!isset(self::$errorMap[$nativeCode])) {
             return new HTTP_Request2_Exception($message, 0, $nativeCode);
         } else {

@@ -158,7 +158,7 @@ EOF;
      * method can be called on those instances.
      *
      * If the size of a file is greater than the allowed size (from php.ini) then
-     * an invalid UploadedFile is returned with an error set to UPLOAD_ERR_INI_SIZE.
+     * an invalid UploadedFile is returned with an errors set to UPLOAD_ERR_INI_SIZE.
      *
      * @see UploadedFile
      *

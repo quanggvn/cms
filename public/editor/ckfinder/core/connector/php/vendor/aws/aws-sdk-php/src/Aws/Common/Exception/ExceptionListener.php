@@ -42,7 +42,7 @@ class ExceptionListener implements EventSubscriberInterface
      */
     public static function getSubscribedEvents()
     {
-        return array('request.error' => array('onRequestError', -1));
+        return array('request.errors' => array('onRequestError', -1));
     }
 
     /**

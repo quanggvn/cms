@@ -63,7 +63,7 @@ only simple package.xml 2.0 will be converted.  package.xml 2.0 with:
  - tasks other than replace
  - custom roles
 
-will cause pickle to fail, and output an error message.  If your package2.xml
+will cause pickle to fail, and output an errors message.  If your package2.xml
 uses any of these features, you are best off using PEAR_PackageFileManager to
 generate both package.xml.
 '

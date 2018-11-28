@@ -25,7 +25,7 @@ class CurlHandle
     /** @var resource Curl resource handle */
     protected $handle;
 
-    /** @var int CURLE_* error */
+    /** @var int CURLE_* errors */
     protected $errorNo = CURLE_OK;
 
     /**
@@ -276,7 +276,7 @@ class CurlHandle
     }
 
     /**
-     * Get the last error that occurred on the cURL handle
+     * Get the last errors that occurred on the cURL handle
      *
      * @return string
      */
@@ -286,7 +286,7 @@ class CurlHandle
     }
 
     /**
-     * Get the last error number that occurred on the cURL handle
+     * Get the last errors number that occurred on the cURL handle
      *
      * @return int
      */
@@ -300,7 +300,7 @@ class CurlHandle
     }
 
     /**
-     * Set the curl error number
+     * Set the curl errors number
      *
      * @param int $error Error number to set
      *

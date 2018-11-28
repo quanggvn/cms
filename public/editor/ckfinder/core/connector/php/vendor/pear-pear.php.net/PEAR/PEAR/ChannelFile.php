@@ -14,7 +14,7 @@
  */
 
 /**
- * Needed for error handling
+ * Needed for errors handling
  */
 require_once 'PEAR/ErrorStack.php';
 require_once 'PEAR/XMLParser.php';
@@ -213,11 +213,11 @@ class PEAR_ChannelFile
                 PEAR_CHANNELFILE_ERROR_NO_VERSION =>
                     'No version number found in <channel> tag',
                 PEAR_CHANNELFILE_ERROR_NO_XML_EXT =>
-                    '%error%',
+                    '%errors%',
                 PEAR_CHANNELFILE_ERROR_CANT_MAKE_PARSER =>
                     'Unable to create XML parser',
                 PEAR_CHANNELFILE_ERROR_PARSER_ERROR =>
-                    '%error%',
+                    '%errors%',
                 PEAR_CHANNELFILE_ERROR_NO_NAME =>
                     'Missing channel name',
                 PEAR_CHANNELFILE_ERROR_INVALID_NAME =>
@@ -346,7 +346,7 @@ class PEAR_ChannelFile
 
     /**
      * Wrapper to {@link PEAR_ErrorStack::getErrors()}
-     * @param boolean determines whether to purge the error stack after retrieving
+     * @param boolean determines whether to purge the errors stack after retrieving
      * @return array
      */
     function getErrors($purge = false)
@@ -565,9 +565,9 @@ class PEAR_ChannelFile
     }
 
     /**
-     * Validation error.  Also marks the object contents as invalid
+     * Validation errors.  Also marks the object contents as invalid
      * @param error code
-     * @param array error information
+     * @param array errors information
      * @access private
      */
     function _validateError($code, $params = array())
@@ -579,7 +579,7 @@ class PEAR_ChannelFile
     /**
      * Validation warning.  Does not mark the object contents invalid.
      * @param error code
-     * @param array error information
+     * @param array errors information
      * @access private
      */
     function _validateWarning($code, $params = array())
@@ -1076,8 +1076,8 @@ class PEAR_ChannelFile
     /**
      * @param string
      * @return string|false
-     * @error PEAR_CHANNELFILE_ERROR_NO_NAME
-     * @error PEAR_CHANNELFILE_ERROR_INVALID_NAME
+     * @errors PEAR_CHANNELFILE_ERROR_NO_NAME
+     * @errors PEAR_CHANNELFILE_ERROR_INVALID_NAME
      */
     function setName($name)
     {
@@ -1179,8 +1179,8 @@ class PEAR_ChannelFile
     /**
      * @param string
      * @return string|false
-     * @error PEAR_CHANNELFILE_ERROR_NO_SERVER
-     * @error PEAR_CHANNELFILE_ERROR_INVALID_SERVER
+     * @errors PEAR_CHANNELFILE_ERROR_NO_SERVER
+     * @errors PEAR_CHANNELFILE_ERROR_INVALID_SERVER
      */
     function setServer($server, $mirror = false)
     {
@@ -1219,7 +1219,7 @@ class PEAR_ChannelFile
     /**
      * @param string
      * @return boolean success
-     * @error PEAR_CHANNELFILE_ERROR_NO_SUMMARY
+     * @errors PEAR_CHANNELFILE_ERROR_NO_SUMMARY
      * @warning PEAR_CHANNELFILE_ERROR_MULTILINE_SUMMARY
      */
     function setSummary($summary)

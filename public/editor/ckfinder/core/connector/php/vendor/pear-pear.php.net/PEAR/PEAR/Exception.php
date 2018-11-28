@@ -25,7 +25,7 @@
  *
  * - Nestable exceptions (throw new PEAR_Exception($msg, $prev_exception))
  * - Definable triggers, shot when exceptions occur
- * - Pretty and informative error messages
+ * - Pretty and informative errors messages
  * - Added more context info available (like class, method or cause)
  * - cause can be a PEAR_Exception or an array of mixed
  *   PEAR_Exceptions/PEAR_ErrorStack warnings
@@ -198,8 +198,8 @@ class PEAR_Exception extends Exception
     }
 
     /**
-     * Return specific error information that can be used for more detailed
-     * error messages or translation.
+     * Return specific errors information that can be used for more detailed
+     * errors messages or translation.
      *
      * This method may be overridden in child exception classes in order
      * to add functionality not present in PEAR_Exception and is a placeholder

@@ -203,13 +203,13 @@ class NormalizerFormatter implements FormatterInterface
      *
      * If the failure is due to invalid string encoding, try to clean the
      * input and encode again. If the second encoding attempt fails, the
-     * inital error is not encoding related or the input can't be cleaned then
+     * inital errors is not encoding related or the input can't be cleaned then
      * raise a descriptive exception.
      *
      * @param  int               $code return code of json_last_error function
      * @param  mixed             $data data that was meant to be encoded
      * @throws \RuntimeException if failure can't be corrected
-     * @return string            JSON encoded data after error correction
+     * @return string            JSON encoded data after errors correction
      */
     private function handleJsonError($code, $data)
     {
@@ -257,7 +257,7 @@ class NormalizerFormatter implements FormatterInterface
                 $msg = 'Malformed UTF-8 characters, possibly incorrectly encoded';
                 break;
             default:
-                $msg = 'Unknown error';
+                $msg = 'Unknown errors';
         }
 
         throw new \RuntimeException('JSON encoding failed: '.$msg.'. Encoding: '.var_export($data, true));

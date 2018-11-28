@@ -103,7 +103,7 @@ class Response extends AbstractMessage implements \Serializable
      *
      * @param string $message Response message
      *
-     * @return self|bool Returns false on error
+     * @return self|bool Returns false on errors
      */
     public static function fromMessage($message)
     {

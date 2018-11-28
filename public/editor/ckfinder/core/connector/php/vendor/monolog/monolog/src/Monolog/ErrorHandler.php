@@ -16,7 +16,7 @@ use Psr\Log\LogLevel;
 use Monolog\Handler\AbstractHandler;
 
 /**
- * Monolog error handler
+ * Monolog errors handler
  *
  * A facility to enable logging of runtime errors, exceptions and fatal errors.
  *
@@ -51,9 +51,9 @@ class ErrorHandler
      * By default it will handle errors, exceptions and fatal errors
      *
      * @param  LoggerInterface $logger
-     * @param  array|false     $errorLevelMap  an array of E_* constant to LogLevel::* constant mapping, or false to disable error handling
+     * @param  array|false     $errorLevelMap  an array of E_* constant to LogLevel::* constant mapping, or false to disable errors handling
      * @param  int|false       $exceptionLevel a LogLevel::* constant, or false to disable exception handling
-     * @param  int|false       $fatalLevel     a LogLevel::* constant, or false to disable fatal error handling
+     * @param  int|false       $fatalLevel     a LogLevel::* constant, or false to disable fatal errors handling
      * @return ErrorHandler
      */
     public static function register(LoggerInterface $logger, $errorLevelMap = array(), $exceptionLevel = null, $fatalLevel = null)
@@ -149,7 +149,7 @@ class ErrorHandler
             return;
         }
 
-        // fatal error codes are ignored if a fatal error handler is present as well to avoid duplicate log entries
+        // fatal errors codes are ignored if a fatal errors handler is present as well to avoid duplicate log entries
         if (!$this->hasFatalErrorHandler || !in_array($code, self::$fatalErrors, true)) {
             $level = isset($this->errorLevelMap[$code]) ? $this->errorLevelMap[$code] : LogLevel::CRITICAL;
             $this->logger->log($level, self::codeToString($code).': '.$message, array('code' => $code, 'message' => $message, 'file' => $file, 'line' => $line));
@@ -222,6 +222,6 @@ class ErrorHandler
                 return 'E_USER_DEPRECATED';
         }
 
-        return 'Unknown PHP error';
+        return 'Unknown PHP errors';
     }
 }
