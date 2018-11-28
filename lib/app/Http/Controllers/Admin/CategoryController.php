@@ -31,7 +31,8 @@ class CategoryController extends Controller
         $category->save();
         return redirect()->intended('admin/category');
     }
-    public function getDeleteCate(){
-
+    public function getDeleteCate($id){
+        Category::destroy($id);
+        return back();
     }
 }
