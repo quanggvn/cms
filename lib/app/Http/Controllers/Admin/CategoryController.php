@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Http\Requests\AddCateRequest;
+use App\Http\Requests\EditCateRequest;
 class CategoryController extends Controller
 {
     public function getCate(){
@@ -19,8 +20,16 @@ class CategoryController extends Controller
         $category->save();
         return back();
     }
-    public function getEditCate(){
-        return view('backend.editcategory');
+    public function getEditCate($id){
+        $data['cate'] = Category::find($id);
+        return view('backend.editcategory', $data);
+    }
+    public function postEditCate(EditCateRequest $request, $id){
+        $category = Category::find($id);
+        $category->cate_name = $request->name;
+        $category->cate_slug = str_slug($request->cate_name);
+        $category->save();
+        return redirect()->intended('admin/category');
     }
     public function getDeleteCate(){
 

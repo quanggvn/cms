@@ -2,213 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b528cb2f-f387-42d2-a378-c2cff9fdf9f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/views/backend/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/views/backend/category1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/views/backend/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/views/backend/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/views/error/note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/views/errors/note.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/resources/views/backend/editcategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/views/backend/editcategory.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/bn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/en-au.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/en-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/en-gb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/mn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/mn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/oc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/si.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/sr-latn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckeditor/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckeditor/lang/tt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Command/JsonCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Command/JsonCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Credentials/RefreshableInstanceProfileCredentials.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Credentials/RefreshableInstanceProfileCredentials.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Enum/ClientOptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Enum/ClientOptions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/ExceptionListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/ExceptionListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/InstanceProfileCredentialsException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/InstanceProfileCredentialsException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/MultipartUploadException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/MultipartUploadException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/Parser/AbstractJsonExceptionParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/Parser/AbstractJsonExceptionParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/Parser/JsonRestExceptionParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/Parser/JsonRestExceptionParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/ServiceResponseException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Exception/ServiceResponseException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Model/MultipartUpload/AbstractTransfer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/Common/Model/MultipartUpload/AbstractTransfer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/Command/S3Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/Command/S3Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/Exception/InternalErrorException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/Exception/InternalErrorException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/Exception/MalformedXMLException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/Exception/MalformedXMLException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/Exception/MissingRequestBodyErrorException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/Exception/MissingRequestBodyErrorException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/ResumableDownload.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/ResumableDownload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/SocketTimeoutChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/SocketTimeoutChecker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/StreamWrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/aws/aws-sdk-php/src/Aws/S3/StreamWrapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/ExceptionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/ExceptionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/ExistingFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/ExistingFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/File/UploadedFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Operation/OperationManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Operation/OperationManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Translator.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Translator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/AppInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/AppInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/AuthBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/AuthBase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/AuthInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/AuthInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/DropboxMetadataHeaderCatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/DropboxMetadataHeaderCatcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/Exception/NetworkIO.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/Exception/NetworkIO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/Exception/ServerError.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/Exception/ServerError.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/Path.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/Path.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/StreamReadException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/StreamReadException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuthException/BadRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuthException/BadRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuthException/Csrf.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuthException/Csrf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuthException/Provider.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuthException/Provider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuthNoRedirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/WebAuthNoRedirect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/strict.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/dropbox/dropbox-sdk/lib/Dropbox/strict.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Curl/CurlHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Curl/CurlHandle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Curl/CurlMulti.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Curl/CurlMulti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Curl/CurlMultiProxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Curl/CurlMultiProxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/BadResponseException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/BadResponseException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/ClientErrorResponseException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/ClientErrorResponseException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/CurlException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/CurlException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/ServerErrorResponseException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Exception/ServerErrorResponseException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/EntityEnclosingRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/EntityEnclosingRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/RequestFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/RequestFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/RequestFactoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/RequestFactoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/RequestInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/RequestInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Message/Response.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Mimetypes.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Http/Mimetypes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Log/MessageFormatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Log/MessageFormatter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/AbstractErrorCodeBackoffStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/AbstractErrorCodeBackoffStrategy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/BackoffPlugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/BackoffPlugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/CurlBackoffStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/CurlBackoffStrategy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/HttpBackoffStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/HttpBackoffStrategy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Cache/CachePlugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Cache/CachePlugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Cache/DefaultCacheStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Cache/DefaultCacheStorage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Cookie/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Cookie/Cookie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/ErrorResponse/ErrorResponseExceptionInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/ErrorResponse/ErrorResponseExceptionInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/ErrorResponse/ErrorResponsePlugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/ErrorResponse/ErrorResponsePlugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Log/LogPlugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Plugin/Log/LogPlugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/AbstractConfigLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/AbstractConfigLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/Command/AbstractCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/Command/AbstractCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/Description/Operation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/Description/Operation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/Description/SchemaValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/Description/SchemaValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/Exception/ValidationException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Service/Exception/ValidationException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Stream/PhpStreamRequestFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Stream/PhpStreamRequestFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Stream/StreamInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Stream/StreamInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Stream/StreamRequestFactoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/guzzle/guzzle/src/Guzzle/Stream/StreamRequestFactoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Common/Internal/ConnectionStringParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Common/Internal/ConnectionStringParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Common/ServiceException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Common/ServiceException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/MediaServices/Models/ErrorDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/MediaServices/Models/ErrorDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/MediaServices/Models/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/MediaServices/Models/Job.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Queue/QueueRestProxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Queue/QueueRestProxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/ServiceManagement/Internal/IServiceManagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/ServiceManagement/Internal/IServiceManagement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/ServiceManagement/Models/GetOperationStatusResult.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/ServiceManagement/Models/GetOperationStatusResult.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/ServiceManagement/Models/RoleInstance.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/ServiceManagement/Models/RoleInstance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/ServiceManagement/ServiceManagementRestProxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/ServiceManagement/ServiceManagementRestProxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Table/Models/BatchError.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Table/Models/BatchError.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Table/Models/EdmType.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Table/Models/EdmType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Table/Models/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/microsoft/windowsazure/WindowsAzure/Table/Models/Entity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/ErrorHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/ErrorHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Handler/Curl/Util.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Handler/Curl/Util.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Archive_Tar/Archive/Tar.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Archive_Tar/Archive/Tar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Console_Getopt/Console/Getopt.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Console_Getopt/Console/Getopt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/HTTP_Request2/HTTP/Request2/Adapter/Curl.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/HTTP_Request2/HTTP/Request2/Adapter/Curl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/HTTP_Request2/HTTP/Request2/CookieJar.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/HTTP_Request2/HTTP/Request2/CookieJar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/HTTP_Request2/HTTP/Request2/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/HTTP_Request2/HTTP/Request2/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/HTTP_Request2/HTTP/Request2/SocketWrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/HTTP_Request2/HTTP/Request2/SocketWrapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Mail_Mime/Mail/mime.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Mail_Mime/Mail/mime.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Mail_Mime/Mail/mimePart.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Mail_Mime/Mail/mimePart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Mail_mimeDecode/Mail/mimeDecode.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Mail_mimeDecode/Mail/mimeDecode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Net_URL2/Net/URL2.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Net_URL2/Net/URL2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Autoloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Autoloader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/ChannelFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/ChannelFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Package.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Package.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Pickle.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Pickle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Registry.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Registry.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Remote.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Command/Remote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Common.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Dependency2.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Dependency2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/DependencyDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/DependencyDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Downloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Downloader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Downloader/Package.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Downloader/Package.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/ErrorStack.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/ErrorStack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Frontend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Installer/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Installer/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/Generator/v1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/Generator/v1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/Generator/v2.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/Generator/v2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/Parser/v1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/Parser/v1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/v1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/v1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/v2.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/v2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/v2/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/PackageFile/v2/Validator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/REST.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/REST.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/REST/10.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/REST/10.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/REST/11.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/REST/11.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Registry.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Registry.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/RunTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/RunTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Task/Common.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Task/Common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/PEAR/Validate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/System.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/pearcmd.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/PEAR/pearcmd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Structures_Graph/Structures/Graph/Node.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/Structures_Graph/Structures/Graph/Node.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/XML_Util/XML/Util.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/pear-pear.php.net/XML_Util/XML/Util.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/psr/log/Psr/Log/AbstractLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/psr/log/Psr/Log/AbstractLogger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/psr/log/Psr/Log/LoggerTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/psr/log/Psr/Log/LoggerTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/Debug.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/Debug.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/ErrorHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/ErrorHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/Exception/FatalThrowableError.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/Exception/FatalThrowableError.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/ExceptionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/ExceptionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/FatalErrorHandler/ClassNotFoundFatalErrorHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/FatalErrorHandler/ClassNotFoundFatalErrorHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/Exception/FileException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/Exception/FileException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/Exception/UploadException.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/Exception/UploadException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/MimeType/FileBinaryMimeTypeGuesser.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/MimeType/FileBinaryMimeTypeGuesser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/MimeType/MimeTypeExtensionGuesser.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/MimeType/MimeTypeExtensionGuesser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/UploadedFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/File/UploadedFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/JsonResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/JsonResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Response.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Session/SessionInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Session/SessionInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Session/Storage/Handler/LegacyPdoSessionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Session/Storage/Handler/LegacyPdoSessionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Session/Storage/SessionStorageInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-foundation/Session/Storage/SessionStorageInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/EventListener/DebugHandlersListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/EventListener/DebugHandlersListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/EventListener/ExceptionListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/EventListener/ExceptionListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Exception/HttpExceptionInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Exception/HttpExceptionInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Fragment/AbstractSurrogateFragmentRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Fragment/AbstractSurrogateFragmentRenderer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Fragment/FragmentHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Fragment/FragmentHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Fragment/InlineFragmentRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Fragment/InlineFragmentRenderer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpCache/HttpCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpCache/HttpCache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Log/LoggerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Log/LoggerInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Log/NullLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/core/connector/php/vendor/symfony/http-kernel/Log/NullLogger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/editor/ckfinder/libs/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/editor/ckfinder/libs/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/backend/js/bootstrap-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/layout/backend/js/bootstrap-table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/backend/js/jquery-1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/layout/backend/js/jquery-1.11.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/frontend/cart.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/frontend/category.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/frontend/complete.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/frontend/details.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/frontend/email.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/frontend/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/frontend/js/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/layout/frontend/js/jquery-3.2.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/layout/frontend/search.blade.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -241,43 +37,52 @@
         <counts>
           <entry key="env" value="4" />
           <entry key="json" value="1" />
-          <entry key="php" value="95" />
+          <entry key="php" value="99" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="35" />
+          <entry key="Blade" value="36" />
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="60" />
+          <entry key="PHP" value="63" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="10" />
-          <entry key="php" value="4159" />
+          <entry key="php" value="4482" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="1072" />
-          <entry key="PHP" value="3083" />
+          <entry key="Blade" value="1219" />
+          <entry key="PHP" value="3257" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="SQL" value="4" />
+          <entry key="SQL" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/app/Http/Controllers/Admin/CategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="394">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding>
                 <element signature="e#46#74#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/app/Http/Requests/EditCateRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -285,29 +90,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/app/Http/Requests/AddCateRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="241">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/app/Http/Controllers/Admin/LoginController.php">
+        <entry file="file://$PROJECT_DIR$/lib/resources/views/backend/editcategory.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="e#46#74#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/app/Models/Category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="265">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -315,17 +108,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="187">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/resources/views/backend/category1.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            <state relative-caret-position="204">
+              <caret line="12" column="53" lean-forward="true" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -361,13 +154,14 @@
         <option value="$PROJECT_DIR$/lib/database/seeds/CategoriesTableSeeder.php" />
         <option value="$PROJECT_DIR$/lib/resources/views/backend/master.blade.php" />
         <option value="$PROJECT_DIR$/lib/app/Models/Category.php" />
-        <option value="$PROJECT_DIR$/lib/resources/views/backend/editcategory.blade.php" />
         <option value="$PROJECT_DIR$/lib/resources/views/backend/category.blade.php" />
-        <option value="$PROJECT_DIR$/lib/routes/web.php" />
         <option value="$PROJECT_DIR$/lib/app/Http/Requests/AddCateRequest.php" />
         <option value="$PROJECT_DIR$/lib/resources/views/errors/note.blade.php" />
         <option value="$PROJECT_DIR$/lib/resources/views/backend/category1.blade.php" />
+        <option value="$PROJECT_DIR$/lib/routes/web.php" />
         <option value="$PROJECT_DIR$/lib/app/Http/Controllers/Admin/CategoryController.php" />
+        <option value="$PROJECT_DIR$/lib/resources/views/backend/editcategory.blade.php" />
+        <option value="$PROJECT_DIR$/lib/app/Http/Requests/EditCateRequest.php" />
       </list>
     </option>
   </component>
@@ -536,6 +330,19 @@
               <item name="cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -624,12 +431,12 @@
       <workItem from="1543256745710" duration="2415000" />
       <workItem from="1543375585677" duration="3694000" />
       <workItem from="1543384444386" duration="220000" />
-      <workItem from="1543406909108" duration="2296000" />
+      <workItem from="1543406909108" duration="5643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54854000" />
+    <option name="totallyTimeSpent" value="58201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -771,20 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/database/seeds/CategoriesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/resources/views/backend/editcategory.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/app/Http/Controllers/Admin/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -848,10 +641,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/lib/database/seeds/CategoriesTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="357">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app/Http/Controllers/Admin/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#46#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -862,37 +665,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app/Http/Controllers/Admin/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/lib/app/Http/Controllers/Admin/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="394">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding>
             <element signature="e#46#74#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app/Http/Requests/EditCateRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/app/Http/Requests/AddCateRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="241">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/resources/views/backend/editcategory.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/resources/views/backend/category1.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app/Http/Controllers/Admin/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="e#46#74#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="53" lean-forward="true" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
         </state>
       </provider>
     </entry>
