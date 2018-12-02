@@ -7,10 +7,15 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\AddProductRequest;
 use App\Models\Product;
 use App\Models\Category;
+use Illuminate\Support\Facades\DB;
 class ProductController extends Controller
 {
     public function getProduct(){
-        return view('backend.product');
+        $data['productList'] = DB::table('vp_products')->join('vp_categories',
+            'vp_products.pro_cate', '=', 'vp_categories.cate_id')
+            ->orderBy('pro_id', 'desc')->get();
+        return view('backend.product', $data);
+
     }
     public function getAddProduct(){
         $data['catelist'] = Category::all();
@@ -32,7 +37,7 @@ class ProductController extends Controller
         $product->pro_featured = $request->featured;
         $product->pro_cate = $request->cate;
         $product->save();
-        $request->img->storeAs('avata', $fileName);
+        $request->img->storeAs('avatar', $fileName);
         return back();
     }
     public function getEditProduct(){
