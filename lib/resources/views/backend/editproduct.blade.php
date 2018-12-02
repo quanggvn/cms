@@ -19,44 +19,44 @@
 								<div class="col-xs-8">
 									<div class="form-group" >
 										<label>Tên sản phẩm</label>
-										<input required type="text" name="name" class="form-control">
+										<input required type="text" name="name" value="{{$product->pro_name}}" class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Giá sản phẩm</label>
-										<input required type="number" name="price" class="form-control">
+										<input required type="number" name="price" value="{{$product->pro_price}}" class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Ảnh sản phẩm</label>
-										<input id="img" type="file" name="img" class="form-control hidden" onchange="changeImg(this)">
-					                    <img id="avatar" class="thumbnail" width="300px" src="img/iphone7-plus-black-select-2016.jpg">
+										<input id="img" type="file" name="img" class="form-control " onchange="changeImg(this)">
+					                    <img id="avatar" class="thumbnail" width="300px" src="{{asset('lib/storage/app/avatar/'.$product->pro_img)}}">
 									</div>
 									<div class="form-group" >
 										<label>Phụ kiện</label>
-										<input required type="text" name="accessories" class="form-control">
+										<input required type="text" name="accessories" value="{{$product->pro_accessories}}" class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Bảo hành</label>
-										<input required type="text" name="warranty" class="form-control">
+										<input required type="text" name="warranty"value="{{$product->pro_warranty}}"  class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Khuyến mãi</label>
-										<input required type="text" name="promotion" class="form-control">
+										<input required type="text" name="promotion" value="{{$product->pro_promotion}}" class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Tình trạng</label>
-										<input required type="text" name="condition" class="form-control">
+										<input required type="text" name="condition" value="{{$product->pro_condition}}" class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Trạng thái</label>
 										<select required name="status" class="form-control">
-											<option value="1">Còn hàng</option>
-											<option value="0">Hết hàng</option>
+											<option value="1" @if($product->pro_status==1) selected @endif>Còn hàng</option>
+											<option value="0" @if($product->pro_status==0) selected @endif>Hết hàng</option>
 					                    </select>
 									</div>
 									<div class="form-group" >
 										<label>Miêu tả</label>
-										<textarea class="ckeditor" required name="description"></textarea>
-										<script type="text/javascript">
+										<textarea class="ckeditor" required name="description" value="{{$product->pro_description}}" ></textarea>
+										<!--<script type="text/javascript">
                                             var editor = CKEDITOR.replace('description',{
                                                 language:'vi',
                                                 fileBrowserImageBrowseUrl:'../../editor/ckfinder/ckfinder.html?Type=Images',
@@ -64,25 +64,22 @@
                                                 fileBrowserImageUploadUrl:'../../editor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
                                                 fileBrowserFlashUploadUrl:'../../editor/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
                                             });
-										</script>
+										</script> -->
 									</div>
 									<div class="form-group" >
 										<label>Danh mục</label>
 										<select required name="cate" class="form-control">
-											<option value="1">iPhone</option>
-											<option value="2">Samsung</option>
-											<option value="3">Nokia</option>
-											<option value="4">HTC</option>
-											<option value="5">LG</option>
-											<option value="6">Sony</option>
+											@foreach($listCate as $cate)
+											<option value="{{$cate->cate_id}}" @if($product->pro_cate == $cate->cate_id) selected @endif>{{$cate->cate_name}}</option>
+                                                @endforeach
 					                    </select>
 									</div>
 									<div class="form-group" >
 										<label>Sản phẩm nổi bật</label><br>
-										Có: <input type="radio" name="featured" value="1">
-										Không: <input type="radio" checked name="featured" value="0">
+										Có: <input type="radio" name="featured" value="1" @if($product->pro_featured==1)  checked @endif>
+										Không: <input type="radio" name="featured" value="0" @if($product->pro_featured==0) checked @endif >
 									</div>
-									<input type="submit" name="submit" value="Thêm" class="btn btn-primary">
+									<input type="submit" name="submit" value="Sửa" class="btn btn-primary">
 									<a href="#" class="btn btn-danger">Hủy bỏ</a>
 								</div>
 							</div>

@@ -40,8 +40,10 @@ class ProductController extends Controller
         $request->img->storeAs('avatar', $fileName);
         return back();
     }
-    public function getEditProduct(){
-        return view('backend.editproduct');
+    public function getEditProduct($id){
+        $data['product'] = Product::find($id);
+        $data['listCate'] = Category::all();
+        return view('backend.editproduct', $data);
     }
     public function postEditProduct(){
 
