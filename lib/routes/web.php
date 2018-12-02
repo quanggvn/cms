@@ -37,7 +37,7 @@ Route::group(['namespace'=>'Admin'], function (){
             Route::get('/', 'ProductController@getProduct');
 
             Route::get('add', 'ProductController@getAddProduct');
-            Route::post('add', 'ProductController@postAddProduct');
+            Route::post('add', 'ProductController@postAddProduct')->name('postAddProduct');
 
             Route::get('edit/{id}', 'ProductController@getEditProduct');
             Route::post('edit/{id}', 'ProductController@postEditProduct');

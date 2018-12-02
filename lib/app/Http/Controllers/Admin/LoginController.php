@@ -12,7 +12,7 @@ class LoginController extends Controller
         return view('backend.login');
     }
     public function postLogin(Request $request){
-        $arr = ['email' => $request->email, 'password' => $request->password];
+        $arr = ['email'=>$request->email, 'password'=>$request->password];
         if($request->remember = 'Remember Me'){
             $remember = 'true';
         }else{

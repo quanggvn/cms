@@ -24,7 +24,7 @@ class VpProducts extends Migration
             $table->string('pro_condition');
             $table->string('pro_promotion');
             $table->tinyInteger('pro_status');
-            $table->text('pro_description');
+            $table->string('pro_description');
             $table->tinyInteger('pro_featured');
             $table->integer('pro_cate')->unsigned();
             $table->foreign('pro_cate')
