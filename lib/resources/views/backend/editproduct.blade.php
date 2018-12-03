@@ -79,10 +79,11 @@
 										Có: <input type="radio" name="featured" value="1" @if($product->pro_featured==1)  checked @endif>
 										Không: <input type="radio" name="featured" value="0" @if($product->pro_featured==0) checked @endif >
 									</div>
-									<input type="submit" name="submit" value="Sửa" class="btn btn-primary">
+									<input type="submit" name="submit" value="Sửa đổi" class="btn btn-primary">
 									<a href="#" class="btn btn-danger">Hủy bỏ</a>
 								</div>
 							</div>
+							{{csrf_field()}}
 						</form>
 						<div class="clearfix"></div>
 					</div>
