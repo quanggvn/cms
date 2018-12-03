@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<base href="{{asset('public/layout/frontend')}}/">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Vietpro Shop - Home</title>
@@ -115,7 +116,7 @@
 							</ul>
 
 							<!-- The slideshow -->
-							<div class="carousel-inner">
+								<div class="carousel-inner">
 								<div class="carousel-item active">
 									<img src="img/home/slide-1.png" alt="Los Angeles" >
 								</div>
@@ -150,142 +151,34 @@
 
 					<div id="wrap-inner">
 						<div class="products">
-							<h3>sản phẩm nổi bật</h3>
+							<h3>sản phẩm đặc biệt</h3>
 							<div class="product-list row">
+								@foreach($featured as $item)
 								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-1.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
+									<a href="#"><img src="{{asset('lib/storage/app/avatar/'.$item->pro_img)}}" class="img-thumbnail"></a>
+									<p><a href="#">{{$item->pro_name}}</a></p>
+									<p class="price">{{number_format($item->pro_price, 0, ',', '.')}}</p>
 									<div class="marsk">
 										<a href="#">Xem chi tiết</a>
 									</div>                                    
 								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-2.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-3.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-4.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-1.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-4.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-3.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-2.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div> 
+								@endforeach
 							</div>                	                	
 						</div>
 
 						<div class="products">
 							<h3>sản phẩm mới</h3>
 							<div class="product-list row">
+								@foreach($news as $item)
 								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-1.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
+									<a href="#"><img src="{{asset('lib/storage/app/avatar/'.$item->pro_img)}}" class="img-thumbnail"></a>
+									<p><a href="#">{{$item->pro_name}}</a></p>
+									<p class="price">{{number_format($item->pro_price, 0, ',', '.')}}/p>
 									<div class="marsk">
 										<a href="#">Xem chi tiết</a>
 									</div>                      	                        
 								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-2.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-3.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-4.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-1.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-2.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-3.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                        
-								</div>
-								<div class="product-item col-md-3 col-sm-6 col-xs-12">
-									<a href="#"><img src="img/home/product-4.png" class="img-thumbnail"></a>
-									<p><a href="#">iPhone 6S Plus 64G</a></p>
-									<p class="price">10.000.000</p>	  
-									<div class="marsk">
-										<a href="#">Xem chi tiết</a>
-									</div>                      	                      
-								</div> 
+								@endforeach
 							</div>    
 						</div>
 					</div>
