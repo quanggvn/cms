@@ -46,7 +46,7 @@
         <div class="row">
             <div id="logo" class="col-md-3 col-sm-12 col-xs-12">
                 <h1>
-                    <a href="#"><img src="img/home/logo.png"></a>
+                    <a href="{{asset('/')}}"><img src="img/home/logo.png"></a>
                     <nav><a id="pull" class="btn btn-danger" href="#">
                             <i class="fa fa-bars"></i>
                         </a></nav>
@@ -73,13 +73,9 @@
                 <nav id="menu">
                     <ul>
                         <li class="menu-item">danh mục sản phẩm</li>
-                        <li class="menu-item"><a href="#" title="">iPhone</a></li>
-                        <li class="menu-item"><a href="#" title="">Samsung</a></li>
-                        <li class="menu-item"><a href="#" title="">Sony</a></li>
-                        <li class="menu-item"><a href="#" title="">HTC</a></li>
-                        <li class="menu-item"><a href="#" title="">LG</a></li>
-                        <li class="menu-item"><a href="#" title="">OPPO</a></li>
-                        <li class="menu-item"><a href="#" title="">Blackberry</a></li>
+                        @foreach($categories as $cate)
+                        <li class="menu-item"><a href="#" title="">{{$cate->cate_name}}</a></li>
+                        @endforeach
                     </ul>
                     <!-- <a href="#" id="pull">Danh mục</a> -->
                 </nav>
