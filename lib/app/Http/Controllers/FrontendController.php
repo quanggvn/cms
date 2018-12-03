@@ -12,5 +12,9 @@ class FrontendController extends Controller
 
         return view('frontend.home', $data);
     }
+    Public function getDetail($id){
+        $data['item'] = Product::find($id);
+        return view('frontend.details', $data);
+    }
 
 }
