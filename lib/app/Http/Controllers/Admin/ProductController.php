@@ -66,7 +66,8 @@ class ProductController extends Controller
         $product::where('pro_id', $id)->update($arr);
         return redirect('admin/product');
     }
-    public function getDeleteProduct(){
-
+    public function getDeleteProduct($id){
+        Product::destroy($id);
+        return back();
     }
 }
