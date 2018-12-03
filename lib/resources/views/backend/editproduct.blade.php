@@ -55,7 +55,8 @@
 									</div>
 									<div class="form-group" >
 										<label>Miêu tả</label>
-										<textarea class="ckeditor" required name="description" value="{{$product->pro_description}}" ></textarea>
+										<!--required-->
+										<textarea class="ckeditor" required name="description" value="{{$product->pro_description}}" >Input description in here...</textarea>
 										<!--<script type="text/javascript">
                                             var editor = CKEDITOR.replace('description',{
                                                 language:'vi',
@@ -80,7 +81,7 @@
 										Không: <input type="radio" name="featured" value="0" @if($product->pro_featured==0) checked @endif >
 									</div>
 									<input type="submit" name="submit" value="Sửa đổi" class="btn btn-primary">
-									<a href="#" class="btn btn-danger">Hủy bỏ</a>
+									<a href="{{asset('admin/product')}}" class="btn btn-danger">Hủy bỏ</a>
 								</div>
 							</div>
 							{{csrf_field()}}

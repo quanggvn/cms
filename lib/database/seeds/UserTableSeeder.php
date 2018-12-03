@@ -21,7 +21,12 @@ class UserTableSeeder extends Seeder
                 'email'=>'gatgong@gmail.com',
                 'password'=>bcrypt('123456'),
                 'level'=>'1'
-            ]
+            ],
+            [
+            'email'=>'ngocquang97bg@gmail.com',
+            'password'=>bcrypt('123456'),
+            'level'=>'1'
+        ]
         ];
         DB::table('vp_users')->insert($data);
     }
