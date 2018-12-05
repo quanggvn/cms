@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use DemeterChain\C;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Comment;
 class FrontendController extends Controller
 {
     public function getHome(){
@@ -15,6 +17,7 @@ class FrontendController extends Controller
     }
     Public function getDetail($id){
         $data['item'] = Product::find($id);
+        $data['comments'] = Comment::where('cmt_product', $id)->orderBy('cmt_id', 'desc')->get();
         return view('frontend.details', $data);
     }
     public function getCategory($id){
@@ -22,5 +25,14 @@ class FrontendController extends Controller
         $data['items'] = Product::where('pro_cate', $id)->orderBy('pro_id', 'desc')
             ->paginate(4);
         return view('frontend.category', $data);
+    }
+    public function postComment(Request $request, $id){
+        $comment = new Comment;
+        $comment->cmt_name = $request->name;
+        $comment->cmt_email = $request->email;
+        $comment->cmt_content = $request->cmt_content;
+        $comment->cmt_product = $id;
+        $comment->save();
+        return back();
     }
 }
