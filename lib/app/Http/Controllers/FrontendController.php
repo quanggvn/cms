@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Product;
 class FrontendController extends Controller
@@ -16,5 +17,10 @@ class FrontendController extends Controller
         $data['item'] = Product::find($id);
         return view('frontend.details', $data);
     }
-
+    public function getCategory($id){
+        $data['cateName'] = Category::find($id);
+        $data['items'] = Product::where('pro_cate', $id)->orderBy('pro_id', 'desc')
+            ->paginate(4);
+        return view('frontend.category', $data);
+    }
 }

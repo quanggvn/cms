@@ -74,7 +74,7 @@
                     <ul>
                         <li class="menu-item">danh mục sản phẩm</li>
                         @foreach($categories as $cate)
-                        <li class="menu-item"><a href="#" title="">{{$cate->cate_name}}</a></li>
+                        <li class="menu-item"><a href="{{asset('category/'.$cate->cate_id.'/'.$cate->cate_slug.'.html')}}" title="">{{$cate->cate_name}}</a></li>
                         @endforeach
                     </ul>
                     <!-- <a href="#" id="pull">Danh mục</a> -->
