@@ -53,16 +53,24 @@
                 </h1>
             </div>
             <div id="search" class="col-md-7 col-sm-12 col-xs-12">
-                <input type="text" name="text" value="Nhập từ khóa ...">
-                <input type="submit" name="submit" value="Tìm Kiếm">
-            </div>
-            <div id="cart" class="col-md-2 col-sm-12 col-xs-12">
-                <a class="display" href="#">Giỏ hàng</a>
-                <a href="#">6</a>
-            </div>
-        </div>
-    </div>
-</header><!-- /header -->
+                <form method="get" action="{{asset('search/')}}">
+                    <div class="input-group">
+                        <div class="input-group-btn form-group">
+                            <input type="text" name="result" class="btn btn-default" placeholder="Nhập từ khóa...">
+                        </div>
+                        <div class="input-group-btn form-group">
+                             <input type="submit" name="submit" class="btn btn-default" value="Tìm Kiếm">
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div id="cart" class="col-md-2 col-sm-12 col-xs-12">
+                  <a class="display" href="#">Giỏ hàng</a>
+                  <a href="#">6</a>
+              </div>
+          </div>
+      </div>
+  </header><!-- /header -->
 <!-- endheader -->
 
 <!-- main -->
