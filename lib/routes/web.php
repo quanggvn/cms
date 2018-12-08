@@ -20,6 +20,11 @@ Route::get('category/{id}/{slug}.html', 'FrontendController@getcategory');
 
 Route::get('search', 'FrontendController@getSearch')->name('search');
 
+Route::group(['prefix' => 'cart'], function () {
+    Route::get('add/{id}', 'FrontendController@getAddCart');
+    Route::post('add/{id}', 'FrontendController@postAddCart');
+});
+
 Route::group(['namespace'=>'Admin'], function (){
     Route::group(['prefix'=>'login', 'middleware'=>'CheckLogedIn'], function (){
         Route::get('/','LoginController@getLogin');

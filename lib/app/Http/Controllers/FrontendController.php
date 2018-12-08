@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use DemeterChain\C;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Comment;
+use Cart;
 class FrontendController extends Controller
 {
     public function getHome(){
@@ -41,5 +41,14 @@ class FrontendController extends Controller
         $result = str_replace('', '%', $result);
         $data['items'] = Product::where('pro_name', 'like', '%'.$result.'%')->paginate(4);
         return view('frontend.search', $data);
+    }
+    public function getAddCart($id){
+       // dd($id);
+     /*   $product = Product::find($id);
+        Cart::add(['id' => $id, 'name' => $product->pro_name, 'qty' => 1,
+            'price' => $product->pro_price, 'options' => ['img' => $product->pro_img]]);
+        return back();*/
+     $data = Cart::content();
+     dd($data);
     }
 }

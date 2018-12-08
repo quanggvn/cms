@@ -18,7 +18,7 @@
 									<p>Tình trạng: {{$item->pro_condition}}</p>
 									<p>Khuyến mại: {{$item->pro_promotion}}</p>
 									<p>Còn hàng: @if($item->pro_status == 1) Còn hàng @else Hết hàng @endif</p>
-									<p class="add-cart text-center"><a href="#">Đặt hàng online</a></p>
+									<p class="add-cart text-center"><a href="{{asset('cart/add/'.$item->pro_id)}}">Đặt hàng online</a></p>
 								</div>
 							</div>							
 						</div>
