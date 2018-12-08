@@ -22,4 +22,14 @@ class CartController extends Controller
         $data['total'] = Cart::total();
         return view('frontend.cart', $data);
     }
+    public function getDeleteCart($id){
+        if($id == 'all'){
+            //dd('xoa het');
+            Cart::destroy();
+        }else{
+           // dd('xoa 1');
+            Cart::remove($id);
+        }
+        return back();
+    }
 }

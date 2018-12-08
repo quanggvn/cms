@@ -23,6 +23,7 @@ Route::get('search', 'FrontendController@getSearch')->name('search');
 Route::group(['prefix' => 'cart'], function () {
     Route::get('add/{id}', 'CartController@getAddCart');
     Route::get('show', 'CartController@getShowCart');
+    Route::get('delete/{id}', 'CartController@getDeleteCart');
 });
 
 Route::group(['namespace'=>'Admin'], function (){
