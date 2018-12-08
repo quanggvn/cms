@@ -21,8 +21,8 @@ Route::get('category/{id}/{slug}.html', 'FrontendController@getcategory');
 Route::get('search', 'FrontendController@getSearch')->name('search');
 
 Route::group(['prefix' => 'cart'], function () {
-    Route::get('add/{id}', 'FrontendController@getAddCart');
-    Route::post('add/{id}', 'FrontendController@postAddCart');
+    Route::get('add/{id}', 'CartController@getAddCart');
+    Route::get('show', 'CartController@getShowCart');
 });
 
 Route::group(['namespace'=>'Admin'], function (){

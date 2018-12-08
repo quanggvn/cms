@@ -42,13 +42,13 @@ class FrontendController extends Controller
         $data['items'] = Product::where('pro_name', 'like', '%'.$result.'%')->paginate(4);
         return view('frontend.search', $data);
     }
-    public function getAddCart($id){
-       // dd($id);
-     /*   $product = Product::find($id);
-        Cart::add(['id' => $id, 'name' => $product->pro_name, 'qty' => 1,
-            'price' => $product->pro_price, 'options' => ['img' => $product->pro_img]]);
-        return back();*/
-     $data = Cart::content();
-     dd($data);
-    }
+//    public function getAddCart($id){
+//       // dd($id);
+//     /*   $product = Product::find($id);
+//        Cart::add(['id' => $id, 'name' => $product->pro_name, 'qty' => 1,
+//            'price' => $product->pro_price, 'options' => ['img' => $product->pro_img]]);
+//        return back();*/
+//        $data = Cart::content();
+//     dd($data);
+//    }
 }
