@@ -59,7 +59,7 @@
 							</form>
                             <div id="xac-nhan">
                                 <h3>Xác nhận mua hàng</h3>
-                                <form>
+                                <form method="post">
                                     <div class="form-group">
                                         <label for="email">Email address:</label>
                                         <input required type="email" class="form-control" id="email" name="email">
@@ -79,6 +79,7 @@
                                     <div class="form-group text-right">
                                         <button type="submit" class="btn btn-default">Thực hiện đơn hàng</button>
                                     </div>
+                                    {{csrf_field()}}
                                 </form>
                             </div>
 						</div>

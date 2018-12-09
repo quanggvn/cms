@@ -23,9 +23,11 @@ Route::get('search', 'FrontendController@getSearch')->name('search');
 Route::group(['prefix' => 'cart'], function () {
     Route::get('add/{id}', 'CartController@getAddCart');
     Route::get('show', 'CartController@getShowCart');
+    Route::post('show', 'CartController@postComplete');
     Route::get('delete/{id}', 'CartController@getDeleteCart');
     Route::get('update', 'CartController@getUpdateCart');;
 });
+Route::get('complete', 'CartController@getComplete');
 
 Route::group(['namespace'=>'Admin'], function (){
     Route::group(['prefix'=>'login', 'middleware'=>'CheckLogedIn'], function (){
