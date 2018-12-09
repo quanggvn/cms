@@ -56,7 +56,7 @@
                 <form method="get" action="{{asset('search/')}}">
                     <div class="input-group">
                         <div class="input-group-btn form-group">
-                            <input type="text" name="result" class="btn btn-default" placeholder="Nhập từ khóa...">
+                            <input required type="text" name="result" class="btn btn-default" placeholder="Nhập từ khóa...">
                         </div>
                         <div class="input-group-btn form-group">
                              <input type="submit" name="submit" class="btn btn-default" value="Tìm Kiếm">

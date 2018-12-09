@@ -2,6 +2,20 @@
 @section('title', 'Show Cart')
 @section('main')
 	<link rel="stylesheet" href="css/cart.css">
+    <script type="text/javascript">
+        function updateCart(qty, rowId) {
+            // console.log(qty);
+            // console.log(rowId);
+            $.get(
+                '{{asset('cart/update')}}',
+                {qty:qty, rowId:rowId},
+                function () {
+                    location.reload();
+                }
+            );
+
+        }
+    </script>
 						<div id="list-cart">
 							<h3>Giỏ hàng</h3>
                             @if(Cart::count() > 0)
@@ -22,7 +36,7 @@
 										<td>{{$item->name}}</td>
 										<td>
 											<div class="form-group">
-												<input class="form-control" type="number" value="{{$item->qty}}">
+												<input class="form-control" type="number" value="{{$item->qty}}" onchange="updateCart(this.value, '{{$item->rowId}}')">
 											</div>
 										</td>
 										<td><span class="price">{{number_format($item->price, 0, ',', '.')}}</span></td>
