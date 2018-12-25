@@ -19,6 +19,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow50.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+    <noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+
     <script type="text/javascript">
         $(function() {
             var pull        = $('#pull');
@@ -46,7 +50,7 @@
         <div class="row">
             <div id="logo" class="col-md-3 col-sm-12 col-xs-12">
                 <h1>
-                    <a href="{{asset('/')}}"><img src="img/home/logo.png"></a>
+                    <a href="{{asset('/')}}"><img src="img/home/logo-cms.png"></a>
                     <nav><a id="pull" class="btn btn-danger" href="#">
                             <i class="fa fa-bars"></i>
                         </a></nav>
@@ -176,20 +180,20 @@
         <div class="container">
             <div class="row">
                 <div id="logo-f" class="col-md-3 col-sm-12 col-xs-12 text-center">
-                    <a href="{{asset('/')}}"><img src="img/home/logo.png"></a>
+                    <a href="{{asset('/')}}"><img src="img/home/logo-cms.png"></a>
                 </div>
                 <div id="about" class="col-md-3 col-sm-12 col-xs-12">
                     <h3>About us</h3>
-                    <p class="text-justify">Vietpro Academy thành lập năm 2009. Chúng tôi đào tạo chuyên sâu trong 2 lĩnh vực là Lập trình Website & Mobile nhằm cung cấp cho thị trường CNTT Việt Nam những lập trình viên thực sự chất lượng, có khả năng làm việc độc lập, cũng như Team Work ở mọi môi trường đòi hỏi sự chuyên nghiệp cao.</p>
+                    <p class="text-justify">CMS Shop thành lập năm 2009. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis temporibus veritatis nam vero obcaecati dolor, iure rerum, modi quasi..</p>
                 </div>
                 <div id="hotline" class="col-md-3 col-sm-12 col-xs-12">
                     <h3>Hotline</h3>
-                    <p>Phone Sale: (+84) 0988 550 553</p>
-                    <p>Email: sirtuanhoang@gmail.com</p>
+                    <p>Phone Sale: (+84) 0968 795 507</p>
+                    <p>Email: cmsshop@gmail.com</p>
                 </div>
                 <div id="contact" class="col-md-3 col-sm-12 col-xs-12">
                     <h3>Contact Us</h3>
-                    <p>Address 1: B8A Võ Văn Dũng - Hoàng Cầu Đống Đa - Hà Nội</p>
+                    <p>Address 1: 308 - Minh Khai - Hai  Bà Trưng - Hà Nội</p>
                     <p>Address 2: Số 25 Ngõ 178/71 - Tây Sơn Đống Đa - Hà Nội</p>
                 </div>
             </div>
@@ -198,15 +202,15 @@
             <div class="container">
                 <div class="row">
                     <div id="footer-b-l" class="col-md-6 col-sm-12 col-xs-12 text-center">
-                        <p>Học viện Công nghệ Vietpro - www.vietpro.edu.vn</p>
+                        <p>Cửa hàng điện thoại chính hãng CMS Shop - www.cms.edu.vn</p>
                     </div>
                     <div id="footer-b-r" class="col-md-6 col-sm-12 col-xs-12 text-center">
-                        <p>© 2017 Vietpro Academy. All Rights Reserved</p>
+                        <p>© 2017 CMS Shop Academy. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
             <div id="scroll">
-                <a href="#"><img src="img/home/scroll.png"></a>
+               <!-- <a href="#"><img src="img/home/scroll.png"></a>-->
             </div>
         </div>
     </div>
